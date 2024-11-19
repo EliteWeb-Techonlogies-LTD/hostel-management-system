@@ -5,7 +5,7 @@ export default function HeroConvienience2 () {
   return (
     <div className='xl:flex items-center md:px-[4.5rem] pt-5 px-5 pb-10'>
       <div>
-        <div className='flex flex-wrap md:block xl:flex gap-10'>
+        <div className='block flex-wrap md:block xl:flex gap-10'>
           <div className='flex-[1]'>
             <small className='text-lg font-bold'>Convenient</small>
             <h1 className='text-5xl font-medium capitalize py-5 leading-snug'>Discover More about our hostel services</h1>
@@ -18,7 +18,7 @@ export default function HeroConvienience2 () {
           </div>
         </div>
 
-        <div className='flex flex-wrap md:block xl:flex gap-10 py-10'>
+        <div className='block flex-wrap md:block xl:flex gap-10 py-10'>
           <div className='flex-[1]'>
             <FaCube className='text-3xl mb-5' />
             <h1 className='text-3xl font-semibold py-4'>Support Services</h1>
