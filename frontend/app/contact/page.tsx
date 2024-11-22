@@ -3,30 +3,38 @@
 
 
 
-export default function contactUs() {
+export default function ContactUs() {
 
     const arrow = ">";
 
     return (
+        
         <> 
-
 {/* className="ml-3" */}
 
 <main className="mx-4">
 
 
+
+
+
+
+
     {/* Welcome to Our Hostel */}
 
-<section className="mb-5 mt-5">
-    <div className="text-left">
-        <div className="font-bold text-3xl py-4">Find Your Perfect Hostel Near the University</div>
-        <div className="font-medium pb-4">Welcome to our hostel website! Discover and book the ideal accommodation for your university life.</div>
+<section className="mb-6 mt-5">
+    <div className="text-left lg:flex lg:gap-7">
+        <h2 className="font-bold text-3xl py-4">Find Your Perfect Hostel Near the University</h2>
+        
+        <div>
+            <p className="font-medium pb-4 my-4">Welcome to our hostel website! Discover and book the ideal accommodation for your university life.</p>
 
-        <button className="bg-black text-white py-2 px-4 mr-4 mb-5">Search</button>
-        <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7">Learn More</button>
+            <button className="bg-black text-white py-2 px-4 mr-4 mb-5">Search</button>
+            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7">Learn More</button>
+        </div>
     </div>
 
-    <img src="https://via.placeholder.com/300x250" alt="" className="min-h-36 object-cover" />
+    <img src="https://via.placeholder.com/300x250" alt="" className="object-cover lg:block" />
 </section>
 
 
@@ -40,7 +48,7 @@ export default function contactUs() {
 
 {/* Find your Ideal Hostel */}
 
-<section className="text-center p-5 pt-12 mb-4">
+<section className="text-center p-5 pt-12 mb-6 lg:mb-10">
     <span className="font-semibold">Hostels</span>
     <h2 className="font-bold text-3xl my-3">Find Your Ideal Hostel</h2>
     <p className="font-medium">Discover the Best Hostels for Students</p>
@@ -60,7 +68,7 @@ export default function contactUs() {
 
 <section className="mb-4">
 
-    <div className="mb-4">
+    <div className="mb-5 lg:flex lg:gap-20">
 
             <div>
               <img src="https://via.placeholder.com/500x500" alt="" />
@@ -92,7 +100,9 @@ export default function contactUs() {
 
     </div>
 
-    <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 ml-24 mt-4">View All</button>
+    <div className="text-center">
+        <button className=" bg-white text-black py-2 px-5 border border-solid border-black mb-7 mt-4 lg:mt-8">View All</button>
+    </div>
 
 </section>
 
@@ -107,16 +117,16 @@ export default function contactUs() {
 
 {/* Hostel Of The Week */}
 
-<section>
+<section className="lg:flex lg:gap-16">
     <div>
         <img src="https://via.placeholder.com/500x800" alt="" className="d-sm-none" />
     </div>
 
-    <div className="mt-3">
+    <div className="mt-3 lg:my-auto">
         <span className="font-semibold mb-3">Discover</span>
         <h2 className="font-bold text-3xl mb-5 mt-3">Hostel of the Week: Unforgettable Stays</h2>
         <p>
-            Experience the best hostel stays with our &rdquo;Hostel of the Week&ldquo; feature.
+            Experience the best hostel stays with our &ldquo;Hostel of the Week&rdquo; feature.
             Each week, we showcase a unique and exceptional hostel that offers Unforgettable experience for students. From stunning locations to top-notch amenities, these hostels are hand-picked to to ensure an amazing stay for you.
         </p>
 
@@ -135,7 +145,7 @@ export default function contactUs() {
 
 {/* *********Payment Options will come here */}
 
-<section className="mt-6 mb-6 text-center">
+<section className="mt-12 mb-8 text-center lg:my-14">
     <span className="font-semibold">Affordable</span>
     <h2 className="font-bold text-3xl mb-5 mt-4">Pricing Options</h2>
     <p className="font-medium mb-5">Choose from a range of price plans to suit your budget</p>
@@ -143,12 +153,12 @@ export default function contactUs() {
     <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-5">Yearly</button>
 </section>
 
-<section className="flex flex-col gap-5 mb-24">
+<section className="flex flex-col gap-5 mb-24 lg:flex lg:gap-8 lg:flex-row">
 
 
     {/* Basic Plan */}
 
-    <div className="border border-solid border-black py-7 px-4">
+    <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
         {/* Cube image */}
         <span className="font-semibold">Basic Plan</span>
         <h2 className="font-bold text-3xl mb-5 mt-1">$19<span className="font-semibold text-base">/mo</span></h2>
@@ -168,7 +178,7 @@ export default function contactUs() {
 
     {/* Business plan */}
 
-    <div className="border border-solid border-black py-7 px-4">
+    <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
         {/* Cube image */}
         <span className="font-semibold">Business Plan</span>
         <h2 className="font-bold text-3xl mb-5 mt-1">$29<span className="font-semibold text-base">/mo</span></h2>
@@ -191,7 +201,7 @@ export default function contactUs() {
 
     {/* Enterprise Plan */}
 
-    <div className="border border-solid border-black py-7 px-4">
+    <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
         {/* Cube image */}
         <span className="font-semibold">Enterprise Plan</span>
         <h2 className="font-bold text-3xl mb-5 mt-1">$49<span className="font-semibold text-base">/mo</span></h2>
@@ -223,16 +233,16 @@ export default function contactUs() {
 
 {/* Discover Additional Hostel Services */}
 
-<section className="mt-4 mb-8">
+<section className="mt-4 mb-8 lg:my-10">
     <span className="font-semibold">Features</span>
     <h2 className="font-bold text-3xl mb-5 mt-4">Discover Additional Hostel Services</h2>
     <p className="font-medium">Find out more about the services offered by our hostels.</p>
 </section>
 
-<section className="mb-6">
-    <div>
+<section className="mb-6 lg:my-6">
+    <div className="lg:flex lg:gap-8 mt-4">
         {/* Service 1 */}
-        <div className="mt-3 mb-8">
+        <div className=" mb-8">
             <div className="mb-4">
                 <img src="https://via.placeholder.com/500x500" alt="" />
             </div>
@@ -304,7 +314,9 @@ export default function contactUs() {
 
     </div>
 
-    <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 ml-48">View All</button>
+    <div className="text-center lg:text-right lg:mt-4">
+        <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7">View All</button>
+    </div>
 </section>
 
 
@@ -314,13 +326,13 @@ export default function contactUs() {
 
 {/* Contact Us */}
 
-<section className="mb-5">
+<section className="mb-7 lg:my-9">
     <span className="font-semibold">Discover</span>
     <h2 className="font-bold text-2xl mb-4 mt-3">Contact Us</h2>
     <p className="font-medium mb-5">Find the perfect hostel near your university campus.</p>
 </section>
 
-<section className="mb-6">
+<section className="mb-6 lg:flex lg:flex-row lg:gap-24">
     <div className="flex flex-col gap-4 mb-4">
         <div>
             <img src="https://via.placeholder.com/40x40" alt="" />
@@ -364,7 +376,7 @@ export default function contactUs() {
 {/* Find Your Perfect Hostel  */}
 
 
-<section className="bg-gray-700 py-12 pl-4 mr-4">
+<section className="bg-gray-700 py-12 pl-4 mr-4 lg:my-24">
     <h2 className="text-white text-3xl font-bold mb-4">Find Your Perfect Hostel</h2>
     <p className="font-medium text-white mb-4">Browse through a wide selection of hostels near the university campus</p>
     <button className="bg-black text-white py-2 px-4 mr-4">Book</button>
@@ -407,7 +419,7 @@ export default function contactUs() {
 
 {/* 5 stars */}
 
-<section className="flex flex-col gap-4 items-center justify-center text-center my-16">
+<section className="flex flex-col gap-4 items-center justify-center text-center my-16 lg:my-24 lg:w-3/5 lg:mx-auto lg:items-center lg:justify-center">
 
     {/* 5Stars goes Here */}
     <p className="font-bold text-xl">Staying in one of the hostels listed on this website was a great experience. The facilities were clean and comfortable, and the staff was friendly and helpful.</p>
@@ -473,23 +485,23 @@ export default function contactUs() {
 {/* COntact Us 2 */}
 
 
-<section className="my-8">
-<div className="flex flex-col gap-4 mb-4 text-center">
-        <div>
+<section className="my-8 lg:my-10 lg:mx-8">
+<div className="flex flex-col gap-4 mb-4 text-center lg:flex lg:flex-row lg:gap-10">
+        <div className="lg:w-2/5">
             <img src="https://via.placeholder.com/40x40" alt="" />
             <h3 className="font-extrabold my-4">Email</h3>
             <p className="mb-3">If you have any question or need assistance with booking a hostel, Please feel free to reach out to us </p>
             <a href="http://" target="_blank"><u>hello@relume.io</u></a>
         </div>
 
-        <div>
+        <div className="lg:w-2/5">
             <img src="https://via.placeholder.com/40x40" alt="" />
             <h3 className="font-extrabold my-4">Phone</h3>
             <p className="mb-3">You contact us via phone during our business hours.</p>
             <u>+1 (555) 123-4567</u>
         </div>
 
-        <div>
+        <div className="lg:w-2/5">
             <img src="https://via.placeholder.com/40x40" alt="" />
             <h3 className="font-extrabold my-4">Office</h3>
             <p className="mb-4">Visit our office for any in-person inquiries or assistance</p>
@@ -524,7 +536,6 @@ export default function contactUs() {
 
 
 </>
-
     );
 
 }
