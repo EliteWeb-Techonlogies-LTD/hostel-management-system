@@ -78,7 +78,7 @@ export default function ExploreMore(){
                     <img className="w-10 rounded-full" src="./male.jpg"/>
                     <p className="font-bold">Micheal Johnson</p>
                     <p className="mb-2">Marketing Manager</p>
-                    <p>Micheal's creative marketing strategies help us reach a wider audience and drive bookings.</p>
+                    <p>Micheal&apos;s creative marketing strategies help us reach a wider audience and drive bookings.</p>
                     <div className="flex gap-3 mt-4 text-xl">
                         <a><FaLinkedin /></a> 
                         <a><FaXTwitter /></a> 
@@ -98,7 +98,7 @@ export default function ExploreMore(){
                 </div>
                 <div className="mb-10">
                     <img className="w-10 rounded-full" src="./hiring.jpg"/>
-                    <p className="font-bold">We're hiring</p>
+                    <p className="font-bold">We&apos;re hiring</p>
                     <p>Join our team and be part of the seamless hostel booking experience.</p>
                     <p className="mb-5 mt-4">Open Position</p>
                     <div className="flex gap-3 mt-4 text-xl">
@@ -122,7 +122,7 @@ export default function ExploreMore(){
                 </div>  
             </div>
             <div className="mt-5">
-                <p className="text-2xl font-bold mb-3">We're Hiring</p>
+                <p className="text-2xl font-bold mb-3">We&apos;re Hiring</p>
                 <p className="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 <button className="border-2 border-black px-4 py-2 hover:bg-black hover:text-white transition ease-in-out duration-300">Open Position</button>
             </div>
@@ -307,7 +307,7 @@ export default function ExploreMore(){
                     </div>
                     <div>
                         <p className="font-bold text-lg">The hostel website has made it so easy for me to find and book a hostel near my university. 
-                            It's a convenient and reliable platorm.</p>
+                            It&apos;s a convenient and reliable platorm.</p>
                     </div>
                     <div className="flex flex-col items-center mt-5">
                         <img className="w-10 rounded-full mb-5" src="./male.jpg"/>
