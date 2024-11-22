@@ -1,4 +1,5 @@
- 
+import Link from "next/link"
+
 export default function Navbar (){
   return (
     <header className="block lg:flex items-center gap-10 px-2 lg:border-b-[1px] border-slate-500">
@@ -8,8 +9,8 @@ export default function Navbar (){
 
       <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full ">
         <ul className="flex flex-col lg:flex-row gap-5 text-lg">
-          <li><a href="">Explore Hostels</a></li>
-          <li><a href="">Book Now</a></li>
+          <li><Link href="/">Explore Hostels</Link></li>
+          <li><a href="/about">Book Now</a></li>
           <li><a href="">Contsct Us</a></li>
           <li><a href="">More Options</a></li>
         </ul>
