@@ -10,9 +10,9 @@ export default function Navbar (){
       <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full ">
         <ul className="flex flex-col lg:flex-row gap-5 text-lg">
           <li><Link href="/">Explore Hostels</Link></li>
-          <li><a href="/about">Book Now</a></li>
-          <li><a href="">Contsct Us</a></li>
-          <li><a href="">More Options</a></li>
+          <li><Link href="/about">Book Now</Link></li>
+          <li><Link href="/project">Contsct Us</Link></li>
+          <li><Link href="">More Options</Link></li>
         </ul>
 
         <div className="flex flex-col lg:flex-row py-8 gap-5">
