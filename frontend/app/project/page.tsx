@@ -10,9 +10,8 @@ import { TiSocialYoutube } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 
-
 import Image from "next/image";
-import Host from "../../public/host.jpg"
+import Host from "../../public/host.jpg";
 
 export default function ExploreMore() {
   return (
@@ -54,7 +53,7 @@ export default function ExploreMore() {
           </div>
         </div>
         <div className="lg:order-1">
-         <Image src={Host} alt=""/>
+          <Image src={Host} alt="" />
         </div>
       </div>
 
@@ -115,7 +114,7 @@ export default function ExploreMore() {
             <p className="font-bold">Micheal Johnson</p>
             <p className="mb-2">Marketing Manager</p>
             <p>
-              Micheal's creative marketing strategies help us reach a wider
+              Micheal&apos;s creative marketing strategies help us reach a wider
               audience and drive bookings.
             </p>
             <div className="flex gap-3 mt-4 text-xl">
@@ -152,7 +151,7 @@ export default function ExploreMore() {
           </div>
           <div className="mb-10">
             <img className="w-10 rounded-full" src="./hiring.jpg" />
-            <p className="font-bold">We're hiring</p>
+            <p className="font-bold">We&apos;re hiring</p>
             <p>
               Join our team and be part of the seamless hostel booking
               experience.
@@ -192,7 +191,7 @@ export default function ExploreMore() {
           </div>
         </div>
         <div className="mt-5">
-          <p className="text-2xl font-bold mb-3">We're Hiring</p>
+          <p className="text-2xl font-bold mb-3">We&apos;re Hiring</p>
           <p className="mb-3">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
@@ -432,7 +431,7 @@ export default function ExploreMore() {
             <div>
               <p className="font-bold text-lg">
                 The hostel website has made it so easy for me to find and book a
-                hostel near my university. It's a convenient and reliable
+                hostel near my university. It&apos;s a convenient and reliable
                 platorm.
               </p>
             </div>
