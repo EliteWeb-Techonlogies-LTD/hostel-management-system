@@ -328,7 +328,7 @@ export default function ExploreMore(){
             </div>
         </div>
 
-        {/*Oir journey towards excellence */}
+        {/*Our journey towards excellence */}
         <div className="ml-4 lg:flex justify-between mt-20">
             <div className="lg:w-1/4">
                 <div className="mb-16">
