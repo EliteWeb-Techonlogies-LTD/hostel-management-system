@@ -470,81 +470,56 @@ export default function ExploreMore() {
         </div>
       </div>
 
-      {/*Oir journey towards excellence */}
-      <div className="ml-4 lg:flex justify-between mt-20">
-        <div className="lg:w-1/4">
-          <div className="mb-16">
-            <p className="font-bold">Experience</p>
-            <h1 className="text-3xl font-bold">
-              Our Journey Towards Excellence and Growth
-            </h1>
-            <div className="w-96 flex mt-5 gap-4 lg:mt-16">
-              <button className="border-2 border-black p-2 hover:bg-black hover:text-white transition ease-in-out duration-300">
-                Learn More
-              </button>
-              <button className="flex items-center gap-3 transition ease-in-out duration-300">
-                Sign Up <GoChevronRight />{" "}
-              </button>
+        {/*Our journey towards excellence */}
+        <div className="ml-4 lg:flex justify-between mt-20">
+            <div className="lg:w-1/4">
+                <div className="mb-16">
+                    <p className="font-bold">Experience</p>
+                    <h1 className="text-3xl font-bold">Our Journey Towards Excellence and Growth</h1>
+                    <div className="w-96 flex mt-5 gap-4 lg:mt-16">
+                        <button className="border-2 border-black p-2 hover:bg-black hover:text-white transition ease-in-out duration-300">Learn More</button>
+                        <button className="flex items-center gap-3 transition ease-in-out duration-300">Sign Up <GoChevronRight /> </button>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div className="flex gap-10 lg:w-2/5 mr-5">
+                <div className="w-20 flex flex-col items-center">
+                    <div className="flex flex-col items-center">
+                        <p className="text-4xl"><FaCube /></p>
+                        <div className="h-20 border-l-2 border-black mt-5"></div>
+                    </div>
+                    <div className="flex flex-col items-center mt-10">
+                        <p className="text-4xl"><FaCube /></p>
+                        <div className="h-20 border-l-2 border-black mt-5"></div>
+                    </div>
+                    <div className="flex flex-col items-center mt-10">
+                        <p className="text-4xl"><FaCube /></p>
+                        <div className="h-20 border-l-2 border-black mt-5"></div>
+                    </div>
+                    <div className="mt-10">
+                        <p className="text-4xl"><FaCube /></p>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="mb-20">
+                        <p className="font-bold text-lg mb-2">Milestone Achieved</p>
+                        <p>Established as the go-to hostel booking platform for students.</p>
+                    </div>
+                    <div className="mb-20">
+                        <p className="font-bold text-lg mb-2">Commitment to Service</p>
+                        <p>Continuously improving our services to meet the needs of students and hostel managers.</p>
+                    </div>
+                    <div className="mb-20">
+                        <p className="font-bold text-lg mb-2">Expnading Reach</p>
+                        <p>Partnering with more hostels to provide a wider range of options for students.</p>
+                    </div>
+                    <div className="mb-20">
+                        <p className="font-bold text-lg mb-2">Customer Satisfaction</p>
+                        <p>Delivering exceptional service and ensuring a comfortable stay for every student.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="flex gap-10 lg:w-2/5 mr-5">
-          <div className="w-20 flex flex-col items-center">
-            <div className="flex flex-col items-center">
-              <p className="text-4xl">
-                <FaCube />
-              </p>
-              <div className="h-20 border-l-2 border-black mt-5"></div>
-            </div>
-            <div className="flex flex-col items-center mt-10">
-              <p className="text-4xl">
-                <FaCube />
-              </p>
-              <div className="h-20 border-l-2 border-black mt-5"></div>
-            </div>
-            <div className="flex flex-col items-center mt-10">
-              <p className="text-4xl">
-                <FaCube />
-              </p>
-              <div className="h-20 border-l-2 border-black mt-5"></div>
-            </div>
-            <div className="mt-10">
-              <p className="text-4xl">
-                <FaCube />
-              </p>
-            </div>
-          </div>
-          <div className="">
-            <div className="mb-20">
-              <p className="font-bold text-lg mb-2">Milestone Achieved</p>
-              <p>
-                Established as the go-to hostel booking platform for students.
-              </p>
-            </div>
-            <div className="mb-20">
-              <p className="font-bold text-lg mb-2">Commitment to Service</p>
-              <p>
-                Continuously improving our services to meet the needs of
-                students and hostel managers.
-              </p>
-            </div>
-            <div className="mb-20">
-              <p className="font-bold text-lg mb-2">Expnading Reach</p>
-              <p>
-                Partnering with more hostels to provide a wider range of options
-                for students.
-              </p>
-            </div>
-            <div className="mb-20">
-              <p className="font-bold text-lg mb-2">Customer Satisfaction</p>
-              <p>
-                Delivering exceptional service and ensuring a comfortable stay
-                for every student.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/*Experience the best text */}
       <div className="ml-4 mb-32 mt-10 lg:mt-32 lg:flex justify-between">
