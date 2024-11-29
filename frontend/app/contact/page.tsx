@@ -1,10 +1,15 @@
 import { FaPlus } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { TiSocialYoutube } from "react-icons/ti";
-import { FaFacebook } from "react-icons/fa";
-import { SlSocialInstagram } from "react-icons/sl";
+// import { FaLinkedin } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { TiSocialYoutube } from "react-icons/ti";
+// import { FaFacebook } from "react-icons/fa";
+// import { SlSocialInstagram } from "react-icons/sl";
+// import { MdOutlineMailOutline } from "react-icons/md";
+// import { LuPhone } from "react-icons/lu";
+// import { SlLocationPin } from "react-icons/sl";
+import { RiStarSFill } from "react-icons/ri";
 import  Navbar  from "@/components/home-components/Navbar";
+import  Footer  from "@/components/home-components/Footer";
 import Image from "next/image"
 import Himage from "@/public/images/h-image.jpg"
 
@@ -286,7 +291,7 @@ export default function ContactUs() {
                   convenient.
                 </p>
                 <div className="flex gap-5">
-                <Image src={Himage} alt="" className="rounded-full max-w-16" />
+                <Image src={Himage} alt="" className="rounded-full w-[50px] h-[50px]" />
 
                   <div className="flex flex-col gap-1">
                     <h3>John Doe</h3>
@@ -313,7 +318,7 @@ export default function ContactUs() {
                   experience.
                 </p>
                 <div className="flex gap-5">
-                <Image src={Himage} alt="" className="rounded-full max-w-16" />
+                <Image src={Himage} alt="" className="rounded-full w-[50px] h-[50px]" />
 
                   <div className="flex flex-col gap-1">
                     <h3>Jane Smith</h3>
@@ -339,7 +344,7 @@ export default function ContactUs() {
                   hostels.
                 </p>
                 <div className="flex gap-5">
-                <Image src={Himage} alt="" className="rounded-full max-w-16" />
+                <Image src={Himage} alt="" className="rounded-full w-[50px] h-[50px]" />
 
                   <div className="flex flex-col gap-1">
                     <h3>David Johnson</h3>
@@ -448,7 +453,7 @@ export default function ContactUs() {
         {/* FAQ */}
         <div className="p-4 cursor-pointer mt-20">
             <div className="">
-                <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
+                <h1 className="text-3xl font-bold mb-4">FAQs</h1>
                 <p className="mb-10">Find answers to common questions about our hostel booking service</p>
             </div>
             <div className="font-bold space-y-4 mb-10">
@@ -490,12 +495,19 @@ export default function ContactUs() {
 
         <section className="flex flex-col gap-4 items-center justify-center text-center my-16 lg:my-24 lg:w-3/5 lg:mx-auto lg:items-center lg:justify-center">
           {/* 5Stars goes Here */}
+          <div className="flex my-7">
+              <RiStarSFill className="text-3xl" />
+              <RiStarSFill className="text-3xl" />
+              <RiStarSFill className="text-3xl" />
+              <RiStarSFill className="text-3xl" />
+              <RiStarSFill className="text-3xl" />
+            </div>
           <p className="font-bold text-xl">
             Staying in one of the hostels listed on this website was a great
             experience. The facilities were clean and comfortable, and the staff
             was friendly and helpful.
           </p>
-          <Image src={Himage} alt="" className="rounded-full max-w-16" />
+          <Image src={Himage} alt="" className="rounded-full w-[50px] h-[50px]" />
           <p>
             <span className="block font-bold">John Doe</span>Student, ABC
             University
@@ -542,103 +554,10 @@ export default function ContactUs() {
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* Footer */}
-        {/*Footer section*/}
-        <div>
-            <div className="lg:flex justify-between m-4">
-                <div className="mb-4 lg:grid grid-cols-4">
-                    <div>
-                        <h1 className="mb-8 text-2xl font-bold">Logo</h1>
-                    </div>
-                    <div className="mb-8">
-                        <h1 className="font-bold mb-5 text-lg">About Us</h1>
-                        <ul className="space-y-2">
-                            <li><a>Book Now</a></li>
-                            <li><a>Contact Us</a></li>
-                            <li><a>FAQs</a></li>
-                            <li><a>Terms</a></li>
-                            <li><a>Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div className="mb-8">
-                        <h1 className="font-bold mb-5 text-lg">Hostels</h1>
-                        <ul className="space-y-2">
-                            <li><a>Hostel One</a></li>
-                            <li><a>Hostel Two</a></li>
-                            <li><a>Hostel Three</a></li>
-                            <li><a>Hostel Four</a></li>
-                            <li><a>Hostel Five</a></li>
-                        </ul>
-                    </div>
-                    <div className="mb-8">
-                        <h1 className="font-bold mb-5 text-lg">Services</h1>
-                        <ul className="space-y-2">
-                            <li><a>Services One</a></li>
-                            <li><a>Services Two</a></li>
-                            <li><a>Services Three</a></li>
-                            <li><a>Services Four</a></li>
-                            <li><a>Services Five</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <Footer />
 
-                <div className="p-4">
-                    <div className="mb-8">
-                        <h1 className="font-bold mb-5 text-lg">Subscribe</h1>
-                        <p className="mb-4">Stay up to date with our latest news and updates</p>
-                        <div className="mb-4">
-                            <input className="bg-inherit w-full border border-black px-4 py-3 text-black" placeholder="Enter email here"></input>
-                        </div>
-                        <div className="mb-5">
-                                <button className="w-full border border-black hover:bg-black hover:text-white px-4 py-3 font-semibold transition duration-200">Subscribe</button>
-                        </div>
-                        <p>By subscribing, you agree to our Privacy policy and consent to receive updates from our company.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="border-t-2 border-black m-3 py-10  lg:flex lg:content-center lg:text-center lg:justify-between">
-
-                <div className="flex gap-3 text-2xl mb-5 lg:text-3xl lg:order-2">
-                    <a href=""><FaFacebook /></a>
-                    <a href=""><SlSocialInstagram /></a>
-                    <a href=""><FaXTwitter /></a>
-                    <a href=""><FaLinkedin /></a>
-                    <a href=""><TiSocialYoutube /></a>
-                </div>
-
-                <div className="lg:flex lg:gap-5 lg:order-1">
-                    <div className="mb-5 lg:order-2">
-                        <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                            <li><a href="">Cookie Settings</a></li>
-                        </ul>
-                    </div>
-                    <div className="lg:order-1">
-                        <p>&copy; {new Date().getFullYear()} HostelHub. All rights reserved. </p>
-                    </div>
-                </div>
-
-            </div>`
-
-        </div> 
+         
       </main>
     </>
   );
