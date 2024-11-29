@@ -11,7 +11,7 @@ import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 
 
-export default function ExploreMore(){
+export default function AboutUs(){
     return (
         <div>
         {/*Welcome Text */}
