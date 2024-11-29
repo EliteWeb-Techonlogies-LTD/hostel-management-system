@@ -4,6 +4,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TiSocialYoutube } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
+import  Navbar  from "@/components/home-components/Navbar";
+import Image from "next/image"
+import Himage from "@/public/images/h-image.jpg"
 
 
 export default function ContactUs() {
@@ -12,6 +15,11 @@ export default function ContactUs() {
   return (
     <>
       {/* className="ml-3" */}
+      
+
+      {/* Navbar */}
+
+      <Navbar />
 
       <main className="mx-4">
         {/* Welcome to Our Hostel */}
@@ -28,20 +36,16 @@ export default function ContactUs() {
                 accommodation for your university life.
               </p>
 
-              <button className="bg-black text-white py-2 px-4 mr-4 mb-5">
+              <button className="bg-black text-white py-2 px-4 mr-4 mb-5 hover:bg-white hover:text-black hover:border-black hover:border">
                 Search
               </button>
-              <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7">
+              <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border">
                 Learn More
               </button>
             </div>
           </div>
 
-          <img
-            src="https://via.placeholder.com/300x250"
-            alt=""
-            className="object-cover lg:block"
-          />
+          <Image src={Himage} alt="" className="lg:max-h-[500px] lg:mx-auto" />
         </section>
 
         {/* Find your Ideal Hostel */}
@@ -56,8 +60,8 @@ export default function ContactUs() {
 
         <section className="mb-4">
           <div className="mb-5 lg:flex lg:gap-20">
-            <div>
-              <img src="https://via.placeholder.com/500x500" alt="" />
+            <div className="my-4">
+              <Image src={Himage} alt="" />
               <h3 className="mt-4 font-bold mb-2 text-lg">Hostel Name Here</h3>
               <p className="font-medium mb-4">
                 Discover a Variety of Hostels for Every Budget and Preference
@@ -75,13 +79,13 @@ export default function ContactUs() {
                 </button>
               </div>
 
-              <span className="p-3 mb-4 font-semibold">
+              <span className="p-3 mb-4 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer">
                 View Hostel &nbsp;&nbsp; {arrow}
               </span>
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/500x500" alt="" />
+              <Image src={Himage} alt="" />
               <h3 className="mt-4 font-bold mb-2 text-lg">Hostel Name Here</h3>
               <p className="font-medium mb-4">
                 Explore the Hostel&apos;s Amenities and Features
@@ -99,14 +103,14 @@ export default function ContactUs() {
                 </button>
               </div>
 
-              <span className="p-3 mb-4 font-semibold">
+              <span className="p-3 mb-4 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer">
                 View Hostel &nbsp;&nbsp; {arrow}
               </span>
             </div>
           </div>
 
           <div className="text-center">
-            <button className=" bg-white text-black py-2 px-5 border border-solid border-black mb-7 mt-4 lg:mt-8">
+            <button className=" bg-white text-black py-2 px-5 border border-solid border-black mb-7 mt-4 lg:mt-8 hover:bg-black hover:text-white hover:border-black hover:border">
               View All
             </button>
           </div>
@@ -114,16 +118,12 @@ export default function ContactUs() {
 
         {/* Hostel Of The Week */}
 
-        <section className="lg:flex lg:gap-16">
-          <div>
-            <img
-              src="https://via.placeholder.com/500x800"
-              alt=""
-              className="d-sm-none"
-            />
+        <section className="lg:flex lg:gap-16 lg:w-full lg:my-24">
+          <div className="lg:w-3/5">
+          <Image src={Himage} alt="" />
           </div>
 
-          <div className="mt-3 lg:my-auto">
+          <div className="mt-3 lg:my-auto lg:w-2/5">
             <span className="font-semibold mb-3">Discover</span>
             <h2 className="font-bold text-3xl mb-5 mt-3">
               Hostel of the Week: Unforgettable Stays
@@ -136,10 +136,10 @@ export default function ContactUs() {
               hostels are hand-picked to to ensure an amazing stay for you.
             </p>
 
-            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 mr-5 mt-6 font-semibold">
+            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 mr-5 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border">
               Learn More
             </button>
-            <span className="p-3 mb-7 mt-6 font-semibold">
+            <span className="p-3 mb-7 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer">
               Book Now &nbsp;&nbsp; {arrow}
             </span>
           </div>
@@ -185,7 +185,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
               Get Started
             </button>
           </div>
@@ -216,7 +216,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
               Get Started
             </button>
           </div>
@@ -250,7 +250,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
               Get Started
             </button>
           </div>
@@ -273,7 +273,7 @@ export default function ContactUs() {
             {/* Service 1 */}
             <div className=" mb-8">
               <div className="mb-4">
-                <img src="https://via.placeholder.com/500x500" alt="" />
+              <Image src={Himage} alt="" />
               </div>
 
               <div>
@@ -286,11 +286,7 @@ export default function ContactUs() {
                   convenient.
                 </p>
                 <div className="flex gap-5">
-                  <img
-                    src="https://via.placeholder.com/200x200"
-                    alt=""
-                    className="rounded-full"
-                  />
+                <Image src={Himage} alt="" className="rounded-full max-w-16" />
 
                   <div className="flex flex-col gap-1">
                     <h3>John Doe</h3>
@@ -304,7 +300,7 @@ export default function ContactUs() {
 
             <div className="mb-8">
               <div className="mb-4">
-                <img src="https://via.placeholder.com/500x500" alt="" />
+              <Image src={Himage} alt="" />
               </div>
 
               <div>
@@ -317,11 +313,7 @@ export default function ContactUs() {
                   experience.
                 </p>
                 <div className="flex gap-5">
-                  <img
-                    src="https://via.placeholder.com/100x100"
-                    alt=""
-                    className="rounded-full"
-                  />
+                <Image src={Himage} alt="" className="rounded-full max-w-16" />
 
                   <div className="flex flex-col gap-1">
                     <h3>Jane Smith</h3>
@@ -334,7 +326,7 @@ export default function ContactUs() {
             {/* Service 3 */}
             <div className="mb-8">
               <div className="mb-4">
-                <img src="https://via.placeholder.com/500x500" alt="" />
+              <Image src={Himage} alt="" />
               </div>
 
               <div>
@@ -347,11 +339,7 @@ export default function ContactUs() {
                   hostels.
                 </p>
                 <div className="flex gap-5">
-                  <img
-                    src="https://via.placeholder.com/100x100"
-                    alt=""
-                    className="rounded-full"
-                  />
+                <Image src={Himage} alt="" className="rounded-full max-w-16" />
 
                   <div className="flex flex-col gap-1">
                     <h3>David Johnson</h3>
@@ -363,7 +351,7 @@ export default function ContactUs() {
           </div>
 
           <div className="text-center lg:text-right lg:mt-4">
-            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7">
+            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border">
               View All
             </button>
           </div>
@@ -379,10 +367,10 @@ export default function ContactUs() {
           </p>
         </section>
 
-        <section className="mb-6 lg:flex lg:flex-row lg:gap-24">
-          <div className="flex flex-col gap-4 mb-4">
+        <section className="mb-6 lg:flex lg:flex-row lg:gap-24 lg:w-full lg:my-10">
+          <div className="flex flex-col gap-4 mb-4 lg:w-2/5">
             <div>
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              {/* <Image src={Himage} alt="" /> */}
               <h3 className="font-bold my-2">Email</h3>
               <p className="mb-3">Send us an email</p>
               <a
@@ -395,7 +383,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              {/* <Image src={Himage} alt="" /> */}
               <h3 className="font-bold my-2">Phone</h3>
               <p className="mb-3">Call us for assistance</p>
               <a
@@ -408,13 +396,13 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              {/* <Image src={Himage} alt="" /> */}
               <h3 className="font-bold my-3">Office</h3>
               <p className="mb-4">123 Main St, Anytown, USA</p>
               <a
                 href="http://"
                 target="_blank"
-                className="text-decoration-none p-3"
+                className="text-decoration-none p-3 hover:bg-black hover:text-white hover:border-black hover:border"
               >
                 {" "}
                 Get Directions &nbsp;&nbsp; {arrow}
@@ -422,8 +410,8 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="mt-5">
-            <img src="via.placeholder.com/800x500" alt="" />
+          <div className="mt-5 lg:w-3/5">
+          <Image src={Himage} alt="" className="lg:mr-2 lg:max-h-96" />
           </div>
         </section>
 
@@ -437,8 +425,8 @@ export default function ContactUs() {
             Browse through a wide selection of hostels near the university
             campus
           </p>
-          <button className="bg-black text-white py-2 px-4 mr-4">Book</button>
-          <button className="bg-none text-white py-2 px-5 border border-solid border-white">
+          <button className="bg-black text-white py-2 px-4 mr-4 hover:bg-inherit hover:text-white hover:border-white hover:border">Book</button>
+          <button className="bg-none text-white py-2 px-5 border border-solid border-white hover:bg-black hover:text-white hover:border-black hover:border">
             Learn More
           </button>
         </section>
@@ -507,7 +495,7 @@ export default function ContactUs() {
             experience. The facilities were clean and comfortable, and the staff
             was friendly and helpful.
           </p>
-          <img src="https://via.placeholder.com/200x200" alt="" />
+          <Image src={Himage} alt="" className="rounded-full max-w-16" />
           <p>
             <span className="block font-bold">John Doe</span>Student, ABC
             University
@@ -522,7 +510,7 @@ export default function ContactUs() {
         <section className="my-8 lg:my-10 lg:mx-8">
           <div className="flex flex-col gap-4 mb-4 text-center lg:flex lg:flex-row lg:gap-10">
             <div className="lg:w-2/5">
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              <Image src={Himage} alt="" />
               <h3 className="font-extrabold my-4">Email</h3>
               <p className="mb-3">
                 If you have any question or need assistance with booking a
@@ -534,7 +522,7 @@ export default function ContactUs() {
             </div>
 
             <div className="lg:w-2/5">
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              <Image src={Himage} alt="" />
               <h3 className="font-extrabold my-4">Phone</h3>
               <p className="mb-3">
                 You contact us via phone during our business hours.
@@ -543,7 +531,7 @@ export default function ContactUs() {
             </div>
 
             <div className="lg:w-2/5">
-              <img src="https://via.placeholder.com/40x40" alt="" />
+              <Image src={Himage} alt="" />
               <h3 className="font-extrabold my-4">Office</h3>
               <p className="mb-4">
                 Visit our office for any in-person inquiries or assistance
