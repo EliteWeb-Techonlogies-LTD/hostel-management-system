@@ -9,19 +9,20 @@ import Img from "../../public/images/ano.webp";
 import Img2 from "../../public/images/img.webp";
 import Img3 from "../../public/images/agoo-hostel.jpg";
 import HeroImg from "../../public/images/ano.webp";
+import QuestionPage from "./FaqHomePage";
 
 export default function Main() {
   return (
     <section className="">
       <div>
-        {/* Fisrt Hero section for the main page */}
+        {/* First Hero section for the main page */}
         <div className="h-[85vh] pt-36">
           <h1 className="text-5xl lg:text-7xl lg:w-[850px] text-center md:w-[600px] md:mx-auto font-semibold py-6 leading-snug">
             Find the perfect hostel for your stay
           </h1>
           <p className="text-lg text-center text-wrap py-2">
             Welcome to our hostel booking website. Discover a wide range of
-            affordable and convinient hostels near your university.
+            affordable and convenient hostels near your university.
           </p>
 
           <div className="flex gap-5 justify-center w-full py-10">
@@ -116,7 +117,7 @@ export default function Main() {
           </div>
         </div>
 
-        {/* The convienience of the hostel website */}
+        {/* The convenience of the hostel website */}
         <div className="xl:flex items-center gap-16 md:px-[4rem] py-2 px-5">
           <div className="w-[50%] leading-loose">
             <small className="font-bold text-lg">Convenience</small>
@@ -144,6 +145,7 @@ export default function Main() {
           </div>
         </div>
 
+       {/* Find and booking hostels cards */}
         <div className="p-4">
           <div className="">
             <p className="font-bold">Discover</p>
@@ -151,7 +153,7 @@ export default function Main() {
               Find and Book Your Perfect Hostel
             </h1>
             <p className="w-[320px]">
-              Searching, comparing and booking hepstels has never been easier.
+              Searching, comparing and booking hostels has never been easier.
               With our platform you can quickly find and reserve the perfect
               hostel for your needs.
             </p>
@@ -275,7 +277,7 @@ export default function Main() {
             </h1>
             <p className="py-5 text-lg">
               Find the perfect place to stay with our extensive selection of
-              hostels. Book now and enjoy a comfortable and convinient
+              hostels. Book now and enjoy a comfortable and convenient
               experience
             </p>
 
@@ -307,7 +309,7 @@ export default function Main() {
               Find Your Perfect Hostel
             </h1>
             <p className="text-center ">
-              Discover affordable and convinient hostels near your university.
+              Discover affordable and convenient hostels near your university.
             </p>
 
             <div className="flex gap-10 py-5 items-center justify-center w-full">
@@ -327,8 +329,8 @@ export default function Main() {
               Get the Latest Updates Here
             </h1>
             <p className="text-lg">
-              Subcribe to our newsletter for the latest updates, tips, and
-              promtions.
+              Subscribe to our newsletter for the latest updates, tips, and
+              promotions.
             </p>
 
             <form action="" className="py-5">
@@ -383,6 +385,16 @@ export default function Main() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* faq section */}
+        <section className="lg:px-20">
+        <QuestionPage/>
+        <div className="pb-20">
+          <h1 className="text-4xl font-semibold py-5">Still have questions?</h1>
+          <p className="text-lg pb-5">Contact us for more information.</p>
+          <button className="border-[1px] border-black px-3 py-2">Contact</button>
+        </div>
         </section>
       </div>
     </section>
