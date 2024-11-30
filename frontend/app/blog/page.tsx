@@ -33,19 +33,19 @@ export default function Blog(){
           </div>
 
           <div className="mt-10 flex flex-row gap-4 text-center justify-center lg:mt-16">
-            <button className="bg-white text-black border border-black border-solid py-2 px-4 hover:bg-black hover:text-white">
+            <button className="bg-white text-black border border-black border-solid py-2 px-4 hover:bg-black hover:text-white cursor-pointer">
               View All
             </button>
-            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4">
+            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4 cursor-pointer">
               Technology
             </button>
-            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4">
+            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4 cursor-pointer">
               Travel
             </button>
-            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4">
+            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4 cursor-pointer">
               Food
             </button>
-            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4">
+            <button className="hover:bg-black hover:text-white hover:border hover:border-black hover:border-solid hover:py-2 hover:px-4 cursor-pointer">
               Lifestyle
             </button>
           </div>
@@ -317,7 +317,7 @@ export default function Blog(){
           </div>
 
           <div className="mt-10 text-center">
-            <button className="border border-solid border-black py-2 px-4 bg-white text-black hover:bg-black hover:text-white">
+            <button className="border border-solid border-black py-2 px-4 bg-white text-black hover:bg-black hover:text-white cursor-pointer">
               View All
             </button>
           </div>
@@ -430,10 +430,10 @@ export default function Blog(){
                 university.
               </p>
 
-              <button className="bg-black text-white py-2 px-4 mr-4 mb-5 hover:bg-white hover:text-black hover:border-black hover:border">
+              <button className="bg-black text-white py-2 px-4 mr-4 mb-5 hover:bg-white hover:text-black hover:border-black hover:border cursor-pointer">
                 Sign Up
               </button>
-              <button className="bg-white text-black py-2 px-5 border border-solid border-black hover:bg-black hover:text-white hover:border-black hover:border">
+              <button className="bg-white text-black py-2 px-5 border border-solid border-black hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
                 Learn More
               </button>
             </div>
@@ -461,7 +461,7 @@ export default function Blog(){
               />
               <button
                 type="submit"
-                className="bg-black text-white border border-black border-solid py-2 px-4 hover:bg-white hover:text-black sm:w-full md:w-full lg:max-w-28"
+                className="bg-black text-white border border-black border-solid py-2 px-4 hover:bg-white hover:text-black sm:w-full md:w-full lg:max-w-28 cursor-pointer"
               >
                 Join now
               </button>
@@ -531,7 +531,7 @@ export default function Blog(){
           <div className="mb-20 text-center">
             <p className="text-2xl font-bold mb-5">Still have questions?</p>
             <p className="mb-10">Contact us for further assistance</p>
-            <a className="border-2 border-black py-5 px-7 hover:bg-black hover:text-white">
+            <a className="border-2 border-black py-5 px-7 hover:bg-black hover:text-white cursor-pointer">
               Contact
             </a>
           </div>

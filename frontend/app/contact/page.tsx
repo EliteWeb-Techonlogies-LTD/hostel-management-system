@@ -7,6 +7,7 @@ import { FaPlus } from "react-icons/fa6";
 // import { MdOutlineMailOutline } from "react-icons/md";
 // import { LuPhone } from "react-icons/lu";
 // import { SlLocationPin } from "react-icons/sl";
+import { FaWebflow } from "react-icons/fa6";
 import { RiStarSFill } from "react-icons/ri";
 import  Navbar  from "@/components/home-components/Navbar";
 import  Footer  from "@/components/home-components/Footer";
@@ -41,10 +42,10 @@ export default function ContactUs() {
                 accommodation for your university life.
               </p>
 
-              <button className="bg-black text-white py-2 px-4 mr-4 mb-5 hover:bg-white hover:text-black hover:border-black hover:border">
+              <button className="bg-black text-white py-2 px-4 mr-4 mb-5 hover:bg-white hover:text-black hover:border-black hover:border cursor-pointer">
                 Search
               </button>
-              <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border">
+              <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
                 Learn More
               </button>
             </div>
@@ -108,14 +109,14 @@ export default function ContactUs() {
                 </button>
               </div>
 
-              <span className="p-3 mb-4 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer">
+              <span className="p-3 mb-4 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer cursor-pointer">
                 View Hostel &nbsp;&nbsp; {arrow}
               </span>
             </div>
           </div>
 
           <div className="text-center">
-            <button className=" bg-white text-black py-2 px-5 border border-solid border-black mb-7 mt-4 lg:mt-8 hover:bg-black hover:text-white hover:border-black hover:border">
+            <button className=" bg-white text-black py-2 px-5 border border-solid border-black mb-7 mt-4 lg:mt-8 hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
               View All
             </button>
           </div>
@@ -141,10 +142,10 @@ export default function ContactUs() {
               hostels are hand-picked to to ensure an amazing stay for you.
             </p>
 
-            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 mr-5 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border">
+            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 mr-5 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
               Learn More
             </button>
-            <span className="p-3 mb-7 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer">
+            <span className="p-3 mb-7 mt-6 font-semibold hover:bg-black hover:text-white hover:border-black hover:border hover:cursor-pointer cursor-pointer">
               Book Now &nbsp;&nbsp; {arrow}
             </span>
           </div>
@@ -190,7 +191,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border cursor-pointer">
               Get Started
             </button>
           </div>
@@ -221,7 +222,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border cursor-pointer">
               Get Started
             </button>
           </div>
@@ -255,7 +256,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border">
+            <button className="bg-black text-white text-center w-full py-3 mt-3 hover:bg-white hover:text-black hover:border-black hover:border cursor-pointer">
               Get Started
             </button>
           </div>
@@ -356,7 +357,7 @@ export default function ContactUs() {
           </div>
 
           <div className="text-center lg:text-right lg:mt-4">
-            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border">
+            <button className="bg-white text-black py-2 px-5 border border-solid border-black mb-7 hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
               View All
             </button>
           </div>
@@ -407,7 +408,7 @@ export default function ContactUs() {
               <a
                 href="http://"
                 target="_blank"
-                className="text-decoration-none p-3 hover:bg-black hover:text-white hover:border-black hover:border"
+                className="text-decoration-none p-3 hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer"
               >
                 {" "}
                 Get Directions &nbsp;&nbsp; {arrow}
@@ -430,8 +431,8 @@ export default function ContactUs() {
             Browse through a wide selection of hostels near the university
             campus
           </p>
-          <button className="bg-black text-white py-2 px-4 mr-4 hover:bg-inherit hover:text-white hover:border-white hover:border">Book</button>
-          <button className="bg-none text-white py-2 px-5 border border-solid border-white hover:bg-black hover:text-white hover:border-black hover:border">
+          <button className="bg-black text-white py-2 px-4 mr-4 hover:bg-inherit hover:text-white hover:border-white hover:border cursor-pointer">Book</button>
+          <button className="bg-none text-white py-2 px-5 border border-solid border-white hover:bg-black hover:text-white hover:border-black hover:border cursor-pointer">
             Learn More
           </button>
         </section>
@@ -451,43 +452,38 @@ export default function ContactUs() {
 
 
         {/* FAQ */}
-        <div className="p-4 cursor-pointer mt-20">
-            <div className="">
-                <h1 className="text-3xl font-bold mb-4">FAQs</h1>
-                <p className="mb-10">Find answers to common questions about our hostel booking service</p>
+        <div className="p-4 mt-20 lg:flex lg:flex-row lg:gap-60 mb-8">
+            <div className="flex flex-col gap-5 mb-10">
+                <h1 className="text-4xl font-bold">FAQs</h1>
+                <p className="font-medium">Find answers to common questions about our hostels, booking processes, and policies</p>
+                <a className="border-2 border-black py-5 px-7 hover:bg-black hover:text-white cursor-pointer">Contact</a>
             </div>
             <div className="font-bold space-y-4 mb-10">
                 <div>
-                    <p className="border-2 border-black p-4 flex justify-between text-lg">How to book a Hostel?
+                    <p className="border-2 border-black p-4 flex justify-between text-lg cursor-pointer">How to book a hostel?
                         <span className="text-2xl"><FaPlus /></span>
                     </p>
                 </div>
                 <div>
-                    <p className="border-2 border-black p-4 flex justify-between text-lg">Are there any hidden fees?
+                    <p className="border-2 border-black p-4 flex justify-between text-lg cursor-pointer">What are the payment options?
                         <span className="text-2xl"><FaPlus /></span>
                     </p>
                 </div>
                 <div>
-                    <p className="border-2 border-black p-4 flex justify-between text-lg">Can i cancel my booking?
+                    <p className="border-2 border-black p-4 flex justify-between text-lg cursor-pointer">What is the cancellation policy?
                         <span className="text-2xl"><FaPlus /></span>
                     </p>
                 </div>
                 <div>
-                    <p className="border-2 border-black p-4 flex justify-between text-lg">Is breakfast included?
+                    <p className="border-2 border-black p-4 flex justify-between text-lg cursor-pointer">Are there any age restrictions?
                         <span className="text-2xl"><FaPlus /></span>
                     </p>
                 </div>
                 <div>
-                    <p className="border-2 border-black p-4 flex justify-between text-lg">How do i contact support?
+                    <p className="border-2 border-black p-4 flex justify-between text-lg cursor-pointer">Can I modify my booking?
                         <span className="text-2xl"><FaPlus /></span>
                     </p>
                 </div>
-            </div>
-
-            <div className="mb-20">
-                <p className="text-2xl font-bold mb-5">Still have questions?</p>
-                <p className="mb-10">Contact us for more information</p>
-                <a className="border-2 border-black py-5 px-7 hover:bg-black hover:text-white">Contact</a>
             </div>
         </div>
 
@@ -513,6 +509,11 @@ export default function ContactUs() {
             University
           </p>
           {/* Webflow image goes here */}
+          <div className="flex gap-1">
+              {/* Webflow Icon */}
+              <FaWebflow className="text-3xl" />
+              <span className="text-xl font-bold">Webflow</span>
+            </div>
         </section>
 
         {/* Meet our Team */}
