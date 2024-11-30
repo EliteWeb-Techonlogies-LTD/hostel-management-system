@@ -6,6 +6,7 @@ import Himage from "@/public/images/young-friends-hostel.jpg";
 // import { FaXTwitter } from "react-icons/fa6";
 // import { TiSocialYoutube } from "react-icons/ti";
 import { MdOutlineMailOutline } from "react-icons/md";
+import  Footer  from "@/components/home-components/Footer";
 import { LuPhone } from "react-icons/lu";
 import { SlLocationPin } from "react-icons/sl";
 // import { MdKeyboardArrowRight } from "react-icons/md";
@@ -585,6 +586,8 @@ export default function Blog(){
         <section className="mb-9 lg:w-4/5 lg:mx-auto">
           <Image src={Himage} alt="" />
         </section>
+
+        <Footer />
       </main>
     </>
 

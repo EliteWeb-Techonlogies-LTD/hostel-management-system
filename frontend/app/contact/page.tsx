@@ -7,12 +7,17 @@ import { FaPlus } from "react-icons/fa6";
 // import { MdOutlineMailOutline } from "react-icons/md";
 // import { LuPhone } from "react-icons/lu";
 // import { SlLocationPin } from "react-icons/sl";
+import { FaCube } from "react-icons/fa";
 import { FaWebflow } from "react-icons/fa6";
 import { RiStarSFill } from "react-icons/ri";
 import  Navbar  from "@/components/home-components/Navbar";
 import  Footer  from "@/components/home-components/Footer";
 import Image from "next/image"
 import Himage from "@/public/images/h-image.jpg"
+import { MdOutlineMailOutline } from "react-icons/md";
+import { LuPhone } from "react-icons/lu";
+import { SlLocationPin } from "react-icons/sl";
+import MeetOurTeam from "@/components/ourteam-components/MeetOurTeam";
 
 
 export default function ContactUs() {
@@ -172,6 +177,7 @@ export default function ContactUs() {
 
           <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
             {/* Cube image */}
+            <FaCube />
             <span className="font-semibold">Basic Plan</span>
             <h2 className="font-bold text-3xl mb-5 mt-1">
               $19<span className="font-semibold text-base">/mo</span>
@@ -200,6 +206,7 @@ export default function ContactUs() {
 
           <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
             {/* Cube image */}
+            <FaCube />
             <span className="font-semibold">Business Plan</span>
             <h2 className="font-bold text-3xl mb-5 mt-1">
               $29<span className="font-semibold text-base">/mo</span>
@@ -231,6 +238,7 @@ export default function ContactUs() {
 
           <div className="border border-solid border-black py-7 px-4 lg:w-2/5">
             {/* Cube image */}
+            <FaCube />
             <span className="font-semibold">Enterprise Plan</span>
             <h2 className="font-bold text-3xl mb-5 mt-1">
               $49<span className="font-semibold text-base">/mo</span>
@@ -377,6 +385,7 @@ export default function ContactUs() {
           <div className="flex flex-col gap-4 mb-4 lg:w-2/5">
             <div>
               {/* <Image src={Himage} alt="" /> */}
+              <MdOutlineMailOutline />
               <h3 className="font-bold my-2">Email</h3>
               <p className="mb-3">Send us an email</p>
               <a
@@ -390,6 +399,7 @@ export default function ContactUs() {
 
             <div>
               {/* <Image src={Himage} alt="" /> */}
+              <LuPhone />
               <h3 className="font-bold my-2">Phone</h3>
               <p className="mb-3">Call us for assistance</p>
               <a
@@ -403,6 +413,7 @@ export default function ContactUs() {
 
             <div>
               {/* <Image src={Himage} alt="" /> */}
+              <SlLocationPin />
               <h3 className="font-bold my-3">Office</h3>
               <p className="mb-4">123 Main St, Anytown, USA</p>
               <a
@@ -417,7 +428,15 @@ export default function ContactUs() {
           </div>
 
           <div className="mt-5 lg:w-3/5">
-          <Image src={Himage} alt="" className="lg:mr-2 lg:max-h-96" />
+          {/* Using University map location in iframe */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.872823922229!2d-122.41941658432925!3d37.77492977975174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f56ed%3A0x5e16c2c1c5a7f5a2!2s123%20Main%20St%2C%20Anytown%2C%20USA!5e0!3m2!1sen!2sin!4v1642011382236!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+          ></iframe>
+
+          {/* <Image src={Himage} alt="" className="lg:mr-2 lg:max-h-96" /> */}
           </div>
         </section>
 
@@ -517,13 +536,14 @@ export default function ContactUs() {
         </section>
 
         {/* Meet our Team */}
+        <MeetOurTeam />
 
         {/* COntact Us 2 */}
 
         <section className="my-8 lg:my-10 lg:mx-8">
           <div className="flex flex-col gap-4 mb-4 text-center lg:flex lg:flex-row lg:gap-10">
             <div className="lg:w-2/5">
-              <Image src={Himage} alt="" />
+              <MdOutlineMailOutline />
               <h3 className="font-extrabold my-4">Email</h3>
               <p className="mb-3">
                 If you have any question or need assistance with booking a
@@ -535,7 +555,7 @@ export default function ContactUs() {
             </div>
 
             <div className="lg:w-2/5">
-              <Image src={Himage} alt="" />
+              <LuPhone />
               <h3 className="font-extrabold my-4">Phone</h3>
               <p className="mb-3">
                 You contact us via phone during our business hours.
@@ -544,7 +564,7 @@ export default function ContactUs() {
             </div>
 
             <div className="lg:w-2/5">
-              <Image src={Himage} alt="" />
+              <SlLocationPin />
               <h3 className="font-extrabold my-4">Office</h3>
               <p className="mb-4">
                 Visit our office for any in-person inquiries or assistance
