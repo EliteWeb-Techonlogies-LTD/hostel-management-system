@@ -4,11 +4,8 @@ export default function GetInTouch (){
   return(
      
     <section className="px-1 lg:px-12">
-    <small className="font-bold text-lg">Book</small>
-    <h1 className="font-bold text-4xl py-4">Get in Touch</h1>
-    <p className="text-lg">Fill out the. form below to book your hostel</p>
 
-    <form action="" className="py-10">
+    <form action="" className="py-10 text-justify">
       <div className="flex gap-5 mb-4">
         <div>
           <label htmlFor="fname" className="text-lg text-left">

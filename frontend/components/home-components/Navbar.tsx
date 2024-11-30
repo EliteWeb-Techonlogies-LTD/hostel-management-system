@@ -11,8 +11,8 @@ export default function Navbar (){
         <ul className="flex flex-col lg:flex-row gap-5 text-lg">
           <li><Link href="/">Explore Hostels</Link></li>
           <li><Link href="/about">Book Now</Link></li>
-          <li><Link href="/project">Contsct Us</Link></li>
-          <li><Link href="">More Options</Link></li>
+          <li><Link href="/faq">Contact Us</Link></li>
+          <li><Link href="/contactus">More Options</Link></li>
         </ul>
 
         <div className="flex flex-col lg:flex-row py-8 gap-5">
