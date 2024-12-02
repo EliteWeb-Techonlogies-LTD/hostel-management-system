@@ -47,7 +47,7 @@ MyComponent();
       <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full ">
         <ul className="flex flex-col lg:flex-row gap-5 text-lg">
           <li><Link href="/">Explore Hostels</Link></li>
-          <li><Link href="/about">Book Now</Link></li>
+          <li><Link href="/booking">Book Now</Link></li>
           <li><Link href="/faq">Contact Us</Link></li>
           <li id="dropDownBtn" className="flex cursor-pointer">More Options<MdKeyboardArrowDown className="text-2xl mt-1" /></li>
         </ul>
