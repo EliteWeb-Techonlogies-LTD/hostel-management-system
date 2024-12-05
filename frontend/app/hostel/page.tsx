@@ -12,8 +12,8 @@ import { FaWebflow } from "react-icons/fa6";
 import { RiStarSFill } from "react-icons/ri";
 import  Navbar  from "@/components/home-components/Navbar";
 import  Footer  from "@/components/home-components/Footer";
-import Image from "next/image"
-import Himage from "@/public/images/h-image.jpg"
+import Image from "next/image";
+import Himage from "@/public/images/h-image.jpg";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import { SlLocationPin } from "react-icons/sl";

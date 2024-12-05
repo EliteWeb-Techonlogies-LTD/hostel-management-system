@@ -33,18 +33,29 @@ export default function Navbar (){
     }, [])
   };
 
+//   logo will move 20px or 5rem
+// Nav Items will be in the middle of the screen
+// dropdown will have no border top and bottom, but will have a shadow and a pull out
+// dropdown on mobile will flex both featured items and products.
+//  Reduce the hero section medium text to be in the middle of the hero section topic.
+// hero section will have a background image and a gradient overlay.
+// get updates will not have a border
+// faq will be in the middle as well has still have a question 
+// spaces must be on the main
+//  footer will flex the two sub-links 
+// DARK MODE IN Tailwind
 
 MyComponent();
 
   
   return (
     <>
-    <header className="block lg:flex items-center gap-10 px-2 lg:border-b-[1px] border-slate-500">
+    <header className="block lg:flex items-center justify-center gap-10 px-2 lg:border-b-[1px] border-slate-500">
       <div>
-        <h1 className="py-5 text-2xl font-bold">Logo</h1>
+        <h1 className="py-5 text-2xl font-bold lg:ml-36">Logo</h1>
       </div>
 
-      <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full ">
+      <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full lg:ml-40">
         <ul className="flex flex-col lg:flex-row gap-5 text-lg">
           <li><Link href="/">Explore Hostels</Link></li>
           <li><Link href="/booking">Book Now</Link></li>
@@ -56,35 +67,36 @@ MyComponent();
 
     <section id="dropDownMobile" className="hidden ml-4 lg:hidden">
         
-        {/* Popular Hostels Div */}
+        <div className="flex flex-row justify-evenly">
+            {/* Popular Hostels Div */}
         <div className="my-8 flex flex-col gap-3 lg:w-3/12">
             <span className="font-semibold">Popular Hostels</span>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Hostel One</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Check Availability</a>
+                <a href=""><span className="font-semibold">Hostel One</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Check Availability</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Hostel Two</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Room Types</a>
+                <a href=""><span className="font-semibold">Hostel Two</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Room Types</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Hostel Three</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Facilities</a>
+                    <a href=""><span className="font-semibold">Hostel Three</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Facilities</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Hostel Four</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Reviews</a>
+                    <a href=""><span className="font-semibold">Hostel Four</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Reviews</span></a>
                 </div>
             </div>
         </div>
@@ -95,31 +107,32 @@ MyComponent();
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Article One</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+                <a href=""><span className="font-semibold">Article One</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Article Two</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+                <a href=""><span className="font-semibold">Article Two</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Article Three</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+                <a href=""><span className="font-semibold">Article Three</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
                 </div>
             </div>
             <div className="flex gap-3">
                 <FaCube className="mt-[6px]" />
                 <div className="flex flex-col">
-                    <span className="font-semibold">Article Four</span>
-                    <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+                <a href=""><span className="font-semibold">Article Four</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
                 </div>
             </div>
+        </div>
         </div>
 
         {/* Latest Blog Posts Div */}
@@ -162,7 +175,7 @@ MyComponent();
 
     <section id="dropDownLarge" className="hidden">
     
-    <div  className="ml-4 lg:mt-1 lg:pl-12 lg:flex lg:gap-12 lg:border-t-2 lg:border-b-2 lg:border-black lg:border-opacity-50 lg:border-solid lg:max-h-[380px] lg:w-full">
+    <div  className="ml-4 lg:mt-1 lg:pl-12 lg:flex lg:gap-12 z-50 shadow-2xl shadow-slate-200 lg:max-h-[380px] lg:w-full">
         
     {/* Popular Hostels Div */}
     <div className="my-8 flex flex-col gap-3 lg:w-3/12">

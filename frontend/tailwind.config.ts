@@ -11,6 +11,9 @@ const config: Config = {
       animation: {
         'loop-scroll': 'loop-scroll 50s linear infinite',
       },
+      backgroundImage: {
+        'heroImage': "url('/hostel-management-system/frontend/public/images/h-image.jpg')"        
+      },
       keyframes: {
         'loop-scroll': {
           from: { transform: 'translateX(0)'},
