@@ -165,7 +165,7 @@ MyComponent();
 
 
         <div className="flex flex-col lg:flex-row py-8 gap-5">
-          <button className="border-[1px] border-black bg-white py-2 px-5">Sign Up</button>
+          <Link href="/signup"><button className="border-[1px] border-black bg-white py-2 px-5">Sign Up</button></Link>
           <button className="border-[1px] border-black bg-black text-white800 py-2 px-5">Log In</button>
         </div>
       </nav>
