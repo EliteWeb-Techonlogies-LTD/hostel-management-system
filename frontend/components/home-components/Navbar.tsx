@@ -2,16 +2,18 @@ import Link from "next/link"
 
 export default function Navbar (){
   return (
-    <header className="block lg:flex items-center gap-10 px-2 lg:border-b-[1px] border-slate-500">
+    <header className="block lg:flex items-center gap-10 px-2 lg:border-b-[1px] border-slate-500 bg-gradient-to-l from-[#4A90E2] to-[#1A355E] text-[#FAF9F6] h-[90px]">
       <div>
-        <h1 className="py-5 text-2xl font-bold">Logo</h1>
+        <h1 className="py-2 text-2xl font-bold">Logo</h1>
       </div>
 
       <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full ">
-        <ul className="flex flex-col lg:flex-row gap-5 text-lg">
+        <ul className="flex flex-col lg:flex-row gap-5 text-lg font-semibold">
           <li><Link href="/">Explore Hostels</Link></li>
           <li><Link href="/booking">Book Now</Link></li>
           <li><Link href="/faq">Contact Us</Link></li>
+          <li><Link href="/faq">Blog</Link></li>
+          <li><Link href="/faq">Faq</Link></li>
           <li><Link href="/contactus">More Options</Link></li>
         </ul>
 
