@@ -12,18 +12,18 @@ export default function Signup (){
                     <div className="bg-white w-full max-w-md rounded-tr-[50px] rounded-br-[50px] shadow-md">
                     <div className="p-8">
                         <h2 className="text-4xl font-bold text-gradient-to-b from-[#4A90E2] to-[#1A355E] text-center">Create an Account</h2>
-                        <form className="mt-6">
+                        <form id="signup-form" className="mt-6">
                             <div>
                                 <label className="block text-lg font-medium text-gray-600">Name</label>
-                                <input type="text" placeholder="Your Name" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
+                                <input id="name" type="text" placeholder="Enter Name" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
                             </div>
                             <div className="mt-4">
                                 <label className="block text-lg font-medium text-gray-600">Phone Number</label>
-                                <input type="tel" placeholder="Your Phone Number" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
+                                <input id="text" type="tel" placeholder="Enter Phone Number" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
                             </div>
                             <div className="mt-4">
                                 <label className="block text-lg font-medium text-gray-600">Password</label>
-                                <input type="password" placeholder="Your Password" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
+                                <input id="password" type="password" placeholder="Enter Password" className="w-full px-4 py-2 mt-2 border rounded-md focus:ring focus:ring-blue-200 focus:outline-none"/>
                             </div>
                             <div className="mt-6">
                                 <button type="submit" className="w-full px-4 py-2 text-white text-xl bg-gradient-to-b from-[#4A90E2] to-[#1A355E] rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Sign Up</button>
