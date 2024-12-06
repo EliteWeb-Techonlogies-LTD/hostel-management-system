@@ -9,8 +9,8 @@ import { TiSocialYoutube } from "react-icons/ti";
 export default function Footer () {
   return (
     <div>
-    <div className="lg:flex justify-between">
-        <div className="p-4 mb-4 lg:grid grid-cols-4">
+    <div className="lg:flex justify-between  bg-gradient-to-l from-[#4A90E2] to-[#1A355E] py-5">
+        <div className="p-4 mb-4 lg:grid grid-cols-4 text-white">
 
             <h1 className="mb-8 text-3xl font-bold">Logo</h1>
             <div className="mb-8">
@@ -46,23 +46,23 @@ export default function Footer () {
         </div>
 
         <div className="p-4">
-            <div className="mb-8">
+            <div className="mb-8 text-white">
                 <h1 className="font-bold mb-5 text-lg">Subscribe</h1>
                 <p className="mb-4">Stay up to date with our latest news and updates</p>
                 <div className="mb-4">
-                    <input className="bg-inherit w-full border border-black px-4 py-3 text-black" placeholder="Enter email here"></input>
+                    <input className="bg-inherit w-full border border-[#FAF9F6] focus:outline-none px-4 py-3 text-white text-xl" placeholder="Enter email here"></input>
                 </div>
                 <div className="mb-5">
-                        <button className="w-full border border-black px-4 py-3 font-semibold transition duration-200">Subscribe</button>
+                        <button className="w-full border bg-[#FAF9F6] text-xl text-[#1A355E] border-[#1A355E] px-4 py-3 font-semibold transition duration-200">Subscribe</button>
                 </div>
                 <p>By subscribing, you agree to our Privacy policy and consent to receive updates from our company.</p>
             </div>
         </div>
     </div>
 
-    <div className="border-t-2 border-black m-3 py-10  lg:flex lg:content-center lg:text-center lg:justify-between">
+    <div className="h-20 lg:flex lg:content-center lg:text-center lg:justify-around items-center">
 
-        <div className="flex gap-3 text-2xl mb-5 lg:text-3xl lg:order-2">
+        <div className="flex gap-3 text-2xl lg:text-3xl lg:order-2">
             <a href=""><TiSocialFacebookCircular /></a>
             <a href=""><SlSocialInstagram /></a>
             <a href=""><TiSocialTwitter /></a>
@@ -71,7 +71,7 @@ export default function Footer () {
         </div>
 
         <div className="lg:flex lg:gap-5 lg:order-1">
-            <div className="mb-5 lg:order-2">
+            <div className="lg:order-2">
                 <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms of Service</a></li>
