@@ -9,8 +9,9 @@ import Img from "../../public/images/ano.webp";
 import Img2 from "../../public/images/img.webp";
 import Img3 from "../../public/images/agoo-hostel.jpg";
 import Script from "next/script";
-// import HeroImg from "../../public/images/ano.webp";
 import QuestionPage from "./FaqHomePage";
+
+import '../../public/css/style.css'
 // import {
 //   Carousel,
 //   initTWE,
@@ -35,7 +36,7 @@ export default function Main() {
 
       <div>
         {/* First Hero section for the main page */}
-        <div className="h-[85vh] pt-36 bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
+        <div className="h-[85vh] pt-36 hero">
           <h1 className="text-5xl lg:text-7xl lg:w-[850px] text-center md:w-[600px] md:mx-auto font-extrabold py-6 leading-snug" >
             Find the perfect hostel for your stay
           </h1>
@@ -48,7 +49,7 @@ export default function Main() {
             <button className="bg-[#1A355E] border-[1px] border-[#1A355E] text-white py-2 px-5 rounded-[2px] font-semibold text-xl hover:bg-inherit hover:text-[#1A355E] transition ease-in-out duration-300">
               Explore
             </button>
-            <button className="py-2 px-2 bg-[#4A90E2] border-[1px] border-[#4A90E2] font-semibold text-xl text-white rounded-[2px] hover:bg-inherit hover:text-[#1A355E] hover:border-[1px] hover:border-black transition ease-in-out duration-300">
+            <button className="py-2 px-2 bg-[#4a90e2] border-[1px] border-[#4A90E2] font-semibold text-xl text-white rounded-[2px] hover:bg-inherit hover:text-[#1a355e] hover:border-[1px] hover:border-black transition ease-in-out duration-300">
               Learn More
             </button>
           </div>
