@@ -50,13 +50,13 @@ MyComponent();
   
   return (
     <>
-    <header className="block lg:flex items-center justify-center gap-10 px-2 lg:border-b-[1px] border-slate-500 lg:px-28 bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
+    <header className="flex flex-col lg:flex-row items-center justify-between gap-10 px-20 lg:border-b-[1px] border-slate-500 lg:px-28] h-[100px] bg-gradient-to-l from-[#40c057] to-[#8ce99a]">
       <div>
         <h1 className="py-5 text-2xl font-bold">Logo</h1>
       </div>
 
-      <nav className="flex flex-col lg:flex-row lg:items-center justify-between w-full lg:ml-40">
-        <ul className="flex flex-col lg:flex-row gap-5 text-lg font-semibold text-white">
+      <div className="">
+        <ul className="flex flex-col lg:flex-row gap-5 text-lg font-medium text-black">
           <li><Link href="/">Explore Hostels</Link></li>
           <li><Link href="/booking">Book Now</Link></li>
           <li><Link href="/faq">Contact Us</Link></li>
@@ -165,13 +165,12 @@ MyComponent();
 
     </section>
 
+      </div>
 
-        <div className="flex flex-col lg:flex-row py-8 gap-5">
+      <div className="flex flex-col lg:flex-row py-8 gap-5">
           <Link href="/signup"><button className="border-[1px] border-black bg-white text-[#1A355E] font-semibold py-2 px-5">Sign Up</button></Link>
-          <button className="border-[1px] border-black bg-[#1A355E] font-semibold text-white800 py-2 px-5">Log In</button>
-        </div>
-      </nav>
-      
+          <button className="text-xl font-bold text-black bg-white py-2 px-5">Log In</button>
+      </div>
     </header>
 
 
