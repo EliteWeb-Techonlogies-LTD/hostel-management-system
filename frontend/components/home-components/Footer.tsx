@@ -53,7 +53,7 @@ export default function Footer () {
                     <input className="bg-inherit w-full border border-[#FAF9F6] focus:outline-none px-4 py-3 text-white text-xl" placeholder="Enter email here"></input>
                 </div>
                 <div className="mb-5">
-                        <button className="w-full border bg-[#FAF9F6] text-xl text-[#1A355E] border-[#1A355E] px-4 py-3 font-semibold transition duration-200">Subscribe</button>
+                        <button className="w-full border bg-[#FAF9F6] text-xl text-[#1A355E] border-[#1A355E] px-4 py-3 font-semibold transform hover:scale-y-105 transition ease-in-out duration-300">Subscribe</button>
                 </div>
                 <p>By subscribing, you agree to our Privacy policy and consent to receive updates from our company.</p>
             </div>
@@ -62,7 +62,7 @@ export default function Footer () {
 
     <div className="h-20 lg:flex lg:content-center lg:text-center lg:justify-around items-center">
 
-        <div className="flex gap-3 text-2xl lg:text-3xl lg:order-2">
+        <div className="flex gap-3 text-2xl lg:text-3xl lg:order-2 text-[#1A355E]">
             <a href=""><TiSocialFacebookCircular /></a>
             <a href=""><SlSocialInstagram /></a>
             <a href=""><TiSocialTwitter /></a>
@@ -70,7 +70,7 @@ export default function Footer () {
             <a href=""><TiSocialYoutube /></a>
         </div>
 
-        <div className="lg:flex lg:gap-5 lg:order-1">
+        <div className="lg:flex lg:gap-5 lg:order-1 text-[#cda330]">
             <div className="lg:order-2">
                 <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
                     <li><a href="">Privacy Policy</a></li>

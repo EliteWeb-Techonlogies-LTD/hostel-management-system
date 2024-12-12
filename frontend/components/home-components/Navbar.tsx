@@ -167,8 +167,8 @@ MyComponent();
 
 
         <div className="flex flex-col lg:flex-row py-8 gap-5">
-          <Link href="/signup"><button className="border-[1px] border-black bg-white text-[#1A355E] font-semibold py-2 px-5">Sign Up</button></Link>
-          <button className="border-[1px] border-black bg-[#1A355E] font-semibold text-white800 py-2 px-5">Log In</button>
+          <Link href="/signup"><button className="border-[1px] border-black bg-[#FAF9F6] text-[#1A355E] font-semibold py-2 px-5 hover:bg-gradient-to-l from-[#4A90E2] to-[#1A355E] hover:text-[#FAF9F6] transition ease-in-out duration-300">Sign Up</button></Link>
+          <button className="border-[1px] border-black bg-[#1A355E] font-semibold text-[#FAF9F6] py-2 px-5 hover:bg-[#FAF9F6] hover:text-[#1A355E] hover:border-[#1A355E] transition ease-in-out duration-300">Log In</button>
         </div>
       </nav>
       
