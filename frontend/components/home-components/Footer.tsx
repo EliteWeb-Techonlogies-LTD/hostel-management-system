@@ -70,7 +70,7 @@ export default function Footer () {
             <a href=""><TiSocialYoutube /></a>
         </div>
 
-        <div className="lg:flex lg:gap-5 lg:order-1 text-[#cda330]">
+        <div className="lg:flex lg:gap-5 lg:order-1 text-[#1A355E]">
             <div className="lg:order-2">
                 <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
                     <li><a href="">Privacy Policy</a></li>

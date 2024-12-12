@@ -60,7 +60,7 @@ export default function Main() {
         {/* the section about the simplified way of looking for hostels */}
         <div className="xl:flex items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10  text-[#1A355E]">
           <div className="flex-[1] ">
-            <small className="font-semibold text-lg text-[#cda330]">Simplified</small>
+            <small className="font-semibold text-lg text-[#1A355E]">Simplified</small>
             <h1 className="md:text-5xl text-4xl font-bold py-3 md:w-[600px] leading-[67px] w-[340px] text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
               Find and Book your Ideal Hostel
             </h1>
@@ -70,16 +70,16 @@ export default function Main() {
             </p>
             <div className="lg:flex gap-10 items-center py-5">
               <div>
-                <FaCube className="text-3xl mb-5 text-[#79C878]" />
-                <h1 className="text-xl font-bold pb-5 text-[#cda330]">Easy Booking</h1>
+                <FaCube className="text-3xl mb-5 text-black" />
+                <h1 className="text-xl font-bold pb-5 text-[#1A355E]">Easy Booking</h1>
                 <p>
                   Browse through a wide selection of hostels near your
                   university.
                 </p>
               </div>
               <div>
-                <FaCube className="text-3xl mb-5 text-[#79C878]" />
-                <h1 className="text-xl font-bold pb-5 text-[#cda330]">Convenient Options</h1>
+                <FaCube className="text-3xl mb-5 text-black" />
+                <h1 className="text-xl font-bold pb-5 text-[#1A355E]">Convenient Options</h1>
                 <p>
                   Choose from different amenities and room types to suit your
                   preferences.
@@ -90,7 +90,7 @@ export default function Main() {
             <button className="bg-[#fff] border-[1px] border-[#1A355E] text-[#1A355E] py-2 px-5 rounded-[2px] font-semibold text-xl hover:bg-[#4A90E2] hover:text-[#FAF9F6] transition ease-in-out duration-300">
               Explore
             </button>
-            <button className="py-2 px-2 bg-gradient-to-l from-[#4A90E2] to-[#1A355E] border-[1px] border-[#1A355E] text-[#FAF9F6] font-semibold text-xl rounded-[2px] hover:text-[#f3eee0] hover:border-[1px] transform hover:scale-105 hover:shadow-lg transition ease-in-out duration-300">
+            <button className="py-2 px-2 bg-[#4A90E2] border-[1px] border-[#1A355E] text-[#FAF9F6] font-semibold text-xl rounded-[2px] hover:text-[#f3eee0] hover:border-[1px] transform hover:scale-105 hover:shadow-lg transition ease-in-out duration-300">
               Learn More
             </button>
             </div>
@@ -104,20 +104,20 @@ export default function Main() {
         <div className="xl:flex items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10 text-[#1A355E]">
           <div>
             <div>
-              <h1 className="text-3xl font-semibold py-3 text-[#cda330]">Secure Bookings</h1>
+              <h1 className="text-3xl font-semibold py-3 text-[#1A355E]">Secure Bookings</h1>
               <p className="text-[16px]">
                 Easily book and reserve hostels with out secure online platform.
               </p>
             </div>
             <div>
-              <h1 className="text-3xl font-semibold py-3 text-[#cda330]">Wide Selection</h1>
+              <h1 className="text-3xl font-semibold py-3 text-[#1A355E]">Wide Selection</h1>
               <p className="text-[16px]">
                 Choose from a wide variety of hostels to the find the perfect
                 accommodation for your needs.
               </p>
             </div>
             <div>
-              <h1 className="text-3xl font-semibold py-3 text-[#cda330]">Management Tools</h1>
+              <h1 className="text-3xl font-semibold py-3 text-[#1A355E]">Management Tools</h1>
               <p className="text-[18px]">
                 Hostels Managers can easily keep track of students and
                 efficiently manage their accommodations.
@@ -175,7 +175,7 @@ export default function Main() {
             <div>
               <Image src={Img3} alt="" className="h-[250px] w-[600px]"/>
               <div className="mt-6">
-                <p className="text-2xl font-bold text-[#cda330]">Search Your Ideal Hostel</p>
+                <p className="text-2xl font-bold text-[#1A355E]">Search Your Ideal Hostel</p>
                 <p className="mt-6">
                   Use our intuitive search function to browse through a wide
                   selection of hostels near your university.
@@ -185,7 +185,7 @@ export default function Main() {
             <div className="">
               <Image src={Img} alt="" className="h-[250px] w-[700px]"/>
               <div className="mt-6">
-                <p className="text-2xl font-bold text-[#cda330]">
+                <p className="text-2xl font-bold text-[#1A355E]">
                   Compare prices and amenities
                 </p>
                 <p className="mt-6">
@@ -197,7 +197,7 @@ export default function Main() {
             <div className="">
               <Image src={Img2} alt="" className="h-[250px] w-[600px]"/>
               <div className="mt-6">
-                <p className="text-2xl font-bold text-[#cda330]">
+                <p className="text-2xl font-bold text-[#1A355E]">
                   Book a Reserve with Confidence
                 </p>
                 <p className="mt-6">
@@ -242,8 +242,8 @@ export default function Main() {
 
             <div className="block flex-wrap md:block xl:flex gap-10 py-10">
               <div className="flex-[1]">
-                <FaCube className="text-3xl mb-5 text-[#79C878]" />
-                <h1 className="text-3xl font-semibold py-4 text-[#cda330]">
+                <FaCube className="text-3xl mb-5 text-black" />
+                <h1 className="text-3xl font-semibold py-4 text-[#1A355E]">
                   Support Services
                 </h1>
                 <p>
@@ -252,8 +252,8 @@ export default function Main() {
                 </p>
               </div>
               <div className="flex-[1]">
-                <FaCube className="text-3xl mb-5 text-[#79C878]" />
-                <h1 className="text-3xl font-semibold py-4 text-[#cda330]">
+                <FaCube className="text-3xl mb-5 text-black" />
+                <h1 className="text-3xl font-semibold py-4 text-[#1A355E]">
                   Hostel Management Resources
                 </h1>
                 <p>
@@ -262,8 +262,8 @@ export default function Main() {
                 </p>
               </div>
               <div className="flex-[1]">
-                <FaCube className="text-3xl mb-5 text-[#79C878]" />
-                <h1 className="text-3xl font-semibold py-4 text-[#cda330]">
+                <FaCube className="text-3xl mb-5 text-black" />
+                <h1 className="text-3xl font-semibold py-4 text-[#1A355E]">
                   Community Events
                 </h1>
                 <p>
@@ -295,14 +295,14 @@ export default function Main() {
 
             <div className="flex flex-col md:flex-row gap-5">
               <div>
-                <h1 className="text-5xl font-bold py-5 text-[#cda330]">50%</h1>
+                <h1 className="text-5xl font-bold py-5 text-[#1A355E]">50%</h1>
                 <p>
                   Hostels available 1000+ | Students Served: 5000+ | Bookings
                   Made: 10000+
                 </p>
               </div>
               <div>
-                <h1 className="text-5xl font-bold py-5 text-[#cda330]">50%</h1>
+                <h1 className="text-5xl font-bold py-5 text-[#1A355E]">50%</h1>
                 <p>
                   Satisfied Students: 95% | Successful Bookings: 98% | Happy
                   Hostel Managers
@@ -488,7 +488,7 @@ export default function Main() {
 
         <section className="border-[1px] border-black mx-3 my-5 lg:mx-20 pt-5 lg:pt-0 flex flex-col lg:flex-row items-center gap-10 text-[#1A355E]">
           <div className="px-5 ">
-            <h1 className="text-4xl font-semibold py-5 text-[#cda330]">
+            <h1 className="text-4xl font-semibold py-5 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
               Get the Latest Updates Here
             </h1>
             <p className="text-lg">
@@ -519,30 +519,30 @@ export default function Main() {
         <section className="px-3 py-20 flex flex-col lg:flex-row lg:gap-20 gap-10 lg:px-20 justify-between w-full text-[#1A355E]">
           <div>
             <small className="font-semibold text-lg py-5">Connect</small>
-            <h1 className="text-3xl font-bold py-5 text-[#cda330]">Get In Touch</h1>
+            <h1 className="text-3xl font-bold py-5 text-[#1A355E]">Get In Touch</h1>
             <p className="py-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
 
           <div className="lg:pr-60">
-            <div className="flex gap-10 items-start text-[#79C878]">
+            <div className="flex gap-10 items-start text-black">
               <SiGmail size={30} />
-              <div className="flex flex-col gap-2 text-[#cda330]">
+              <div className="flex flex-col gap-2 text-[#1A355E]">
                 <p className="font-bold text-xl">Email</p>
                 <p className="underline">contact@hostelhub.com</p>
               </div>
             </div>
-            <div className="flex gap-10 items-start py-5 text-[#79C878]">
+            <div className="flex gap-10 items-start py-5 text-black">
               <FaPhone size={30} />
-              <div className="flex flex-col gap-2 text-[#cda330]">
+              <div className="flex flex-col gap-2 text-[#1A355E]">
                 <p className="font-bold text-xl">Phone</p>
                 <p className="underline">+1 (555) 123-4567</p>
               </div>
             </div>
-            <div className="flex gap-10 items-start text-[#79C878]">
+            <div className="flex gap-10 items-start text-black">
               <FaLocationPin size={30} />
-              <div className="flex flex-col gap-2 text-[#cda330]">
+              <div className="flex flex-col gap-2 text-[#1A355E]">
                 <p className="font-bold text-xl">Office</p>
                 <p className="underline">123 main St, Anytown, USA</p>
               </div>
@@ -554,7 +554,7 @@ export default function Main() {
         <section className="lg:px-20">
         <QuestionPage  />
         <div className="pb-20 text-center text-[#1A355E]">
-          <h1 className="text-4xl font-semibold py-5 text-[#cda330]">Still have questions?</h1>
+          <h1 className="text-4xl font-semibold py-5">Still have questions?</h1>
           <p className="text-lg pb-5">Contact us for more information.</p>
           <button className="border-[1px] bg-gradient-to-l from-[#4A90E2] to-[#1A355E] text-[#FAF9F6] px-3 py-2 transform hover:scale-105 hover:shadow-lg transition ease-in-out duration-300">Contact</button>
         </div>
