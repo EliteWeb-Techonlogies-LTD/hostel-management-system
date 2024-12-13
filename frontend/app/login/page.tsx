@@ -1,4 +1,4 @@
-
+import Navbar from "@/components/home-components/Navbar";
 import Link from "next/link"
 import Image from "next/image"
 import Img from "../../public/images/Secure-login-amico.png"
@@ -6,6 +6,7 @@ import Img from "../../public/images/Secure-login-amico.png"
 export default function Login (){
   return (
     <>
+    <Navbar/>
    <section className="bg-[#FAF9F6] h-[100vh] flex items-center justify-center">
     <div className="shadow-2xl bg-gradient-to-b from-[#4A90E2] to-[#1A355E] shadow-[#1a355e60] px-5 py-10 w-full lg:w-[500px] rounded-e-[2rem] z-10 bg-white rounded-s-[10px]">
       <h1 className="text-3xl font-bold mb-2 text-center text-white">Login</h1>
