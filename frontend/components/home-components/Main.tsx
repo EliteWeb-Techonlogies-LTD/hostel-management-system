@@ -11,7 +11,8 @@ import Img3 from "../../public/images/agoo-hostel.jpg";
 import Script from "next/script";
 import QuestionPage from "./FaqHomePage";
 
-import '../../public/css/style.css'
+import '../../public/css/style.css';
+import '../../public/js/carousel.js';
 // import {
 //   Carousel,
 //   initTWE,
