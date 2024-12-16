@@ -1,10 +1,5 @@
 import Image from "next/image";
-import Himage from "@/public/images/young-friends-hostel.jpg";
-// import { FaPlus } from "react-icons/fa";
-// import { FaFacebook, FaLinkedin } from "react-icons/fa";
-// import { SlSocialInstagram } from "react-icons/sl";
-// import { FaXTwitter } from "react-icons/fa6";
-// import { TiSocialYoutube } from "react-icons/ti";
+import Himage from "../../public/images/ano.webp";
 import { MdOutlineMailOutline } from "react-icons/md";
 import  Footer  from "@/components/home-components/Footer";
 import { LuPhone } from "react-icons/lu";

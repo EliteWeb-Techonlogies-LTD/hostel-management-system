@@ -5,7 +5,6 @@ import Img from "../../public/images/agoo-hostel.jpg"
 import Img2 from "../../public/images/ano.webp"
 import Img3 from "../../public/images/img.webp"
 import Locations from "../about-components/Locations";
-import Faq from "../home-components/Faq";
 import MeetOurTeam from "./MeetOurTeam";
 
 export default function OurTeam (){
@@ -106,7 +105,6 @@ export default function OurTeam (){
           </button>
         </div>
         <div className="flex-[1.7]">
-          <Faq/>
         </div>
       </section>
 

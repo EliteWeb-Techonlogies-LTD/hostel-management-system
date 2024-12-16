@@ -1,5 +1,5 @@
 .hero{
-  background-image: linear-gradient(rgba(1, 4, 7, 0.5), rgba(1, 4, 8, 0.7)),url('../images/ano.webp');
+  /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('../images/ano.webp'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
