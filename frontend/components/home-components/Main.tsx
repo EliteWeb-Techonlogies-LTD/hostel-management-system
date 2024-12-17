@@ -11,9 +11,14 @@ import Img3 from "../../public/images/agoo-hostel.jpg";
 import Script from "next/script";
 import QuestionPage from "./FaqHomePage";
 import { IoIosArrowForward } from "react-icons/io";
+import {
+  Carousel,
+  initTWE,
+} from "tw-elements";
+initTWE({ Carousel });
 
 import '../../public/css/style.css';
-import '../../public/js/carousel.js';
+// import '../../public/js/carousel.js';
 // import {
 //   Carousel,
 //   initTWE,
@@ -22,6 +27,8 @@ import '../../public/js/carousel.js';
 
 
 export default function Main() {
+
+  
   
   return (
     <section className="">
@@ -230,7 +237,7 @@ export default function Main() {
                 </h1>
               </div>
 
-              <div className="flex-[1]">
+              <div className="flex-[1] lg:my-auto">
                 <p className="text-xl leading-relaxed">
                   In addition to providing comfortable accommodation we offer a
                   range of support services,valuable hostel management
