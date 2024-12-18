@@ -1,11 +1,13 @@
+import '../../public/css/style.css'
+
 export default function HostelHero() {
   return (
     <section>
-      <div className="text-left flex flex-col items-center justify-center h-[70vh] lg:gap-4">
-        <h2 className="font-bold text-3xl lg:text-5xl w-[90%] lg:w-2/4 text-center leading-normal">
+      <div className="text-left flex flex-col items-center justify-center h-[85vh] lg:gap-4 hostelhero">
+        <h2 className="font-bold text-3xl lg:text-5xl w-[90%] lg:w-2/4 text-center leading-normal text-white">
           Find Your Perfect Hostel Near the University
         </h2>
-          <p className="font-medium pb-4 w-[330px] lg:w-[550px] text-center">
+          <p className="font-medium pb-4 w-[330px] lg:w-[550px] text-center text-gray-300">
             Welcome to our hostel website! Discover and book the ideal
             accommodation for your university life.
           </p>

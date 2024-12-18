@@ -8,7 +8,7 @@ export default function Cards() {
         <h1 className="text-4xl font-bold mb-6 mt-4 w-[320px] lg:w-full ">
           Find and Book Your Perfect Hostel
         </h1>
-        <p className="w-[320px] lg:w-full">
+        <p className="w-full lg:w-[600px]">
           Searching, comparing and booking hostels has never been easier. With
           our platform you can quickly find and reserve the perfect hostel for
           your needs.
@@ -18,14 +18,19 @@ export default function Cards() {
       {/* cards */}
       <div className="mt-10 flex flex-col gap-6 lg:flex-row justify-center">
         {cardDetails.map((cards) => (
-          <div key={cards.id}>
-            <Image src={cards.img} alt={cards.title} width={1000} height={1000}/>
-            <h2 className="text-2xl font-bold">{cards.title}</h2>
+          <div key={cards.id} className="py-5 px-5 shadow-md rounded-xl">
+            <Image
+              src={cards.img}
+              alt={cards.title}
+              width={1000}
+              height={1000}
+              className=""
+            />
+            <h2 className="text-xl font-bold py-2">{cards.title}</h2>
             <p className="text-lg">{cards.desc}</p>
           </div>
         ))}
-      <div>
-      </div>
+        <div></div>
       </div>
     </section>
   );
@@ -34,7 +39,7 @@ export default function Cards() {
 const cardDetails = [
   {
     id: 1,
-    img: "/images/agoo-hostel.jpg",
+    img: "/images/ano.webp",
     title: "Search Your Ideal Hostel",
     desc: " Use our intuitive search function to browse through a wide selection of hostels near your university.",
   },

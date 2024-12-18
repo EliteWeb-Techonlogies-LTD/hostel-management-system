@@ -1,10 +1,11 @@
 import { FaCube } from "react-icons/fa";
 import Image from "next/image";
-import Img from "../../public/images/agoo-hostel.jpg"
+import Img from "../../public/images/college-students.gif"
+import Link from "next/link";
 
 export default function Simply() {
   return (
-    <section className="xl:flex items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10">
+    <section className="xl:flex items-center gap-10 md:px-[4.5rem] px-5 py-20">
       <div className="flex-[1]">
         <small className="font-semibold text-lg">Simplified</small>
         <h1 className="md:text-5xl text-4xl font-bold py-3 md:w-[600px] leading-[67px] w-[340px]">
@@ -25,12 +26,12 @@ export default function Simply() {
           ))}
         </div>
         <div className="flex gap-10 pb-10">
-            <button className="bg-[#fff] border-[1px] border-[#000] text-[#000] py-2 px-5 rounded-[2px] font-semibold text-xl">
-              Explore
-            </button>
-            <button className="py-2 px-2 bg-[#000] border-[1px] border-[#000] text-[#FAF9F6] font-semibold text-xl rounded-[2px]">
-              Learn More
-            </button>
+        <Link href="/hostel"><button className="text-white border-[1px] border-[#332590] bg-[#332590]  py-2 px-5 rounded-full font-semibold text-xl transition ease-in-out duration-300">
+          Explore
+        </button></Link>
+        <Link href="/project"><button className="py-2 px-2 font-semibold text-xl  rounded-full h hover:border-[1px] bg-white text-black border-[1px] border-black">
+          Learn More
+        </button></Link>
             </div>
       </div>
       <div className="flex-[1.5]">

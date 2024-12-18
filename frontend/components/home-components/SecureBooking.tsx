@@ -3,7 +3,7 @@ import Img from "../../public/images/ano.webp"
 
 export default function SecureBooking() {
   return (
-    <section className="xl:flex items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10 text-[#000]">
+    <section className="lg:flex lg:flex-row-reverse items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10 text-[#000]">
       <div>
         {bookingDetails.map((info) => (
           <div key={info.id}>

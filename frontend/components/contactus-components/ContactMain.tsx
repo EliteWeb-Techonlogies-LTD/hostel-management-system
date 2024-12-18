@@ -3,24 +3,24 @@ import Img from "../../public/images/ano.webp"
 import Image from "next/image";
 import Locations from "../about-components/Locations";
 
-
+import "../../public/css/style.css"
 
 
 export default function ContactMain(){
   return(
     <section>
     {/* Get in Touch with us */}
-    <div className="py-20 px-3 lg:px-10">
-      <small className="text-xl font-bold py-6">Connect</small>
+    <div className="py-20 flex flex-col items-center ContactMain h-[85vh] justify-center text-white">
+      <small className="text-xl font-bold ">Connect</small>
       <h2 className="text-4xl lg:text-6xl font-bold py-6">Get in Touch</h2>
-      <p className="pb-5 text-lg">
+      <p className="pb-5 text-lg text-gray-200">
         We&apos;re to here to help. Contact us with any questions or support needs.
       </p>
       <div className="flex gap-5 lg:gap-10">
         <button className="border-[1px] border-black text-xl bg-black text-white py-3 px-6">
           Contact
         </button>
-        <button className="border-[1px] border-black text-xl py-3 px-6">
+        <button className="border-[1px] border-black text-xl py-3 px-6 bg-white text-black">
           Learn More
         </button>
       </div>

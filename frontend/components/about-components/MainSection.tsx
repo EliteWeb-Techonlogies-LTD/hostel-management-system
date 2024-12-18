@@ -11,9 +11,9 @@ export default function MainSection() {
     // Find and book your stay section
     <section>
 
-      <section className="block items-center justify-between lg:flex px-2 lg:px-10 gap-10 pb-10 text-[#000]">
+      <section className="block items-center justify-between lg:flex px-2 lg:px-10 gap-10 py-20 text-[#000]">
         <div>
-          <h1 className="text-4xl font-semibold py-2 lg:text-5xl text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
+          <h1 className="text-4xl font-semibold py-2 lg:text-5xl">
             Simplify and Secure Your Booking Process With Ease
           </h1>
           <p className="py-6 text-lg lg:text-2xl text-[#000]">
@@ -33,14 +33,14 @@ export default function MainSection() {
           <small className="text-lg font-semibold text-center">
             Affordable
           </small>
-          <h1 className="text-3xl lg:text-5xl font-semibold text-center py-4 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
+          <h1 className="text-3xl lg:text-5xl font-semibold text-center py-4">
             Pricing Options
           </h1>
           <p className="text-lg pb-6">
             Choose from a range of affordable pricing plans
           </p>
-          <button className="bg-[#1A355E] hover:text-[#FAF9F6] text-white px-5 py-2 transition ease-in-out duration-300">Monthly</button>
-          <button className="border-[1px] py-[0.43rem] px-5 border-[#1A355E] transition ease-in-out duration-300">
+          <button className="bg-[#000] text-white px-5 py-2">Monthly</button>
+          <button className="border-[1px] py-[0.43rem] px-5 border-[#000]">
             Yearly
           </button>
           <PriceCards />
@@ -106,13 +106,13 @@ export default function MainSection() {
           </div>
 
           <div>
-            <div className="flex gap-5 items-center">
+            <div className="flex items-center">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="border-[1px] border-black w-full px-3 h-[50px] lg:w-[500px]"
               />
-              <button className="bg-[#1A355E] text-white hover:bg-[#355d9a] hover:text-[#FAF9F6] hover:border transition ease-in-out duration-300 w-full py-4 my-4 lg:my-0 cursor-pointer lg:w-[150px]">
+              <button className="bg-[#000] text-white  h-[50px] cursor-pointer lg:w-[150px]">
                 Subscribe Now
               </button>
             </div>
@@ -127,7 +127,7 @@ export default function MainSection() {
         <div className="flex flex-col lg:flex-row gap-20 lg:justify-between items-center">
           <div>
             <small className="font-bold text-lg">Simplified</small>
-            <h1 className="text-4xl font-semibold py-2 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">Booking Process Timeline</h1>
+            <h1 className="text-4xl font-semibold py-2">Booking Process Timeline</h1>
 
             <div className="flex gap-10 cursor-pointer">
               <button className="border-[1px] border-black py-4 px-10 text-xl">Learn More</button>
