@@ -2,7 +2,7 @@ import GetInTouch from "../about-components/GetInTouch";
 import Img from "../../public/images/ano.webp"
 import Image from "next/image";
 import Locations from "../about-components/Locations";
-import Faq from "../home-components/Faq";
+
 
 
 
@@ -102,7 +102,7 @@ export default function ContactMain(){
       <div className="w-full lg:w-1/2">
         <h1 className="text-4xl font-bold py-5">FAQs</h1>
         <p className="text-lg py-3">Find quick solutions to your inquries with our frequetly asked questions.</p>
-        <Faq/>
+        
         <p className="text-3xl lg:text-4xl py-5 font-bold">Still have questions?</p>
         <p className="text-lg">Contact us for further assistance.</p>
         <button className="border-[1px] border-black my-5 px-5 py-2 text-xl">Contact</button>

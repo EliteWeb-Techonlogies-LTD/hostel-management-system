@@ -2,43 +2,21 @@ import Image from "next/image";
 import Img from "../../public/images/ano.webp";
 import Profile from "../../public/images/b5f6905ca104bb7504095636fa73bd10.jpeg";
 import PriceCards from "./PriceCards";
-import Faq from "../home-components/Faq";
 import GetInTouch from "./GetInTouch";
 import { FaCube } from "react-icons/fa6";
+
 
 export default function MainSection() {
   return (
     // Find and book your stay section
     <section>
-      <section className="py-40 px-3 block lg:flex gap-10 lg:px-20 text-[#1A355E]">
-        <div className="flex-[1]">
-          <small className="text-lg font-medium">Find</small>
-          <p className="text-5xl font-semibold py-5">Book Your Stay</p>
-        </div>
-        <div className="flex-[1]">
-          <p className="font-medium">
-            Welcome to our booking page! Find the perfect hostel for your stay
-            near the university. Browse through our wide selection of affordable
-            and comfortable accommodations.
-          </p>
 
-          <div className="flex gap-10 my-6">
-            <button className="bg-[#1A355E] hover:bg-[#3467b4] hover:border-[#1A355E] text-[#FAF9F6] text-xl px-5 py-3 transform hover:scale-105 transition ease-in-out duration-300">
-              Search
-            </button>
-            <button className="border-[1.5px] px-5 py-3 text-xl bg-[#4CA3E8] text-[#FAF9F6] hover:bg-[#5CB8FF] hover:border-[#1A355E] hover:text-[#FAF9F6] transition ease-in-out duration-300">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="block items-center justify-between lg:flex px-2 lg:px-10 gap-10 pb-10 text-[#1A355E]">
+      <section className="block items-center justify-between lg:flex px-2 lg:px-10 gap-10 pb-10 text-[#000]">
         <div>
           <h1 className="text-4xl font-semibold py-2 lg:text-5xl text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
             Simplify and Secure Your Booking Process With Ease
           </h1>
-          <p className="py-6 text-lg lg:text-2xl text-[#1A355E]">
+          <p className="py-6 text-lg lg:text-2xl text-[#000]">
             Our booking process ensures simplicity and security, making it a
             breeze to reserve your idea hostel.
           </p>
@@ -48,17 +26,9 @@ export default function MainSection() {
         </div>
       </section>
 
-      {/* Get in touch form section */}
-      <div className="">
-      <div className="px-3 lg:px-12 py-3">
-        <small className="font-bold text-lg">Book</small>
-      <h1 className="font-bold text-4xl py-4">Get in Touch</h1>
-      <p className="text-lg">Fill out the. form below to book your hostel</p></div>
-      <GetInTouch />
-      </div>
-      
+    
       {/* Pricing section  */}
-      <section className="h-full w-full justify-center flex items-center text-[#1A355E]">
+      <section className="h-full w-full justify-center flex items-center text-[#000]">
         <div className="text-center">
           <small className="text-lg font-semibold text-center">
             Affordable
@@ -77,25 +47,22 @@ export default function MainSection() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row px-3 lg:px-36 justify-between gap-5 lg:items-center py-32 text-[#1A355E]">
-        <div>
-          <h1 className="text-4xl font-semibold py-3 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
+      <section className="flex flex-col px-3 lg:px-36 justify-between gap-10 lg:items-center py-32 text-[#000]">
+        <div className="text-center">
+          <h1 className="text-4xl font-semibold py-3">
             Find Your Perfect Hostel
           </h1>
-          <p className="text-xl">Book a Comfortable and Affordable Hostel</p>
+          <p className="text-md">Book a Comfortable and Affordable Hostel</p>
         </div>
         <div className="flex gap-5">
-          <button className="bg-[#1A355E] hover:bg-[#3467b4] hover:border-[#1A355E] text-[#FAF9F6] px-6 py-3 text-lg transition ease-in-out duration-300">
+          <button className="bg-[#000] text-[#fff] px-6 py-3 text-lg transition ease-in-out duration-300">
             Reserve
-          </button>
-          <button className="border-[1px] text-lg px-6 py-3 bg-[#4CA3E8] text-[#FAF9F6] hover:bg-[#5CB8FF] hover:border-[#1A355E] hover:text-[#FAF9F6] transition ease-in-out duration-300">
-            Learn More
           </button>
         </div>
       </section>
 
       {/* Faq section */}
-      <section className="flex flex-col justify-between px-4 lg:flex-row lg:px-28 pt-20 gap-10 text-[#1A355E]">
+      <section className="flex flex-col justify-between px-4 lg:flex-row lg:px-28 pt-20 gap-10 text-[#000]">
         <div className="flex-[1]">
           <h2 className="text-4xl py-2 font-semibold text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
             Frequently Asked Questions
@@ -108,11 +75,11 @@ export default function MainSection() {
           </button>
         </div>
         <div className="flex-[1.7]">
-          <Faq />
+        
         </div>
       </section>
 
-      <section className="flex items-center justify-center w-full h-full text-[#1A355E]">
+      <section className="flex items-center justify-center w-full h-full text-[#000]">
         <div className="text-center">
           <h1 className="font-bold text-2xl py-5">Webflow</h1>
           <h1 className="text-xl lg:text-3xl lg:w-[850px] text-center md:w-[600px] md:mx-auto font-semibold py-6 leading-snug">
@@ -129,7 +96,7 @@ export default function MainSection() {
         </div>
       </section>
 
-      <section className="px-3 py-40 lg:px-10 text-[#1A355E]">
+      <section className="px-3 py-40 lg:px-10 text-[#000]">
         <div className="flex flex-col justify-between lg:flex-row">
           <div>
             <h1 className="text-4xl font-semibold py-3 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">
@@ -156,8 +123,8 @@ export default function MainSection() {
         </div>
       </section>
 
-      <section className="px-2 lg:px-20 pt-10 pb-12 text-[#1A355E]">
-        <div className="flex flex-col lg:flex-row gap-20 lg:justify-between">
+      <section className="px-2 lg:px-20 pt-10 pb-12 text-[#000]">
+        <div className="flex flex-col lg:flex-row gap-20 lg:justify-between items-center">
           <div>
             <small className="font-bold text-lg">Simplified</small>
             <h1 className="text-4xl font-semibold py-2 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">Booking Process Timeline</h1>
@@ -227,7 +194,7 @@ export default function MainSection() {
       </section>
 
       {/* Book and get in touch with us */}
-      <section className="flex items-center justify-center w-full h-full text-center text-[#1A355E]">
+      <section className="flex items-center justify-center w-full h-full text-center text-[#000]">
         <div>
         <small className="font-bold text-lg">Book</small>
       <h1 className="font-bold text-4xl py-4 text-transparent bg-clip-text bg-gradient-to-l from-[#4A90E2] to-[#1A355E]">Get in Touch</h1>

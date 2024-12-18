@@ -1,5 +1,9 @@
 .hero{
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('../images/ano.webp');
+  /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('../images/ano.webp'); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+.card:hover{
+  transition: ease-in-out 0.5s;
+  transform: scale(1.02);
 }

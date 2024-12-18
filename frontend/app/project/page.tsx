@@ -6,15 +6,17 @@ import { TbWorld } from "react-icons/tb";
 import { FaWebflow } from "react-icons/fa6";
 import { PiArrowCircleLeftThin } from "react-icons/pi";
 import { PiArrowCircleRightThin } from "react-icons/pi";
-import { TiSocialYoutube } from "react-icons/ti";
-import { FaFacebook } from "react-icons/fa";
-import { SlSocialInstagram } from "react-icons/sl";
+
 
 import Image from "next/image";
-import Host from "../../public/host.jpg";
+import Host from "../../public/images/host.jpg";
+import Navbar from "@/components/home-components/Navbar";
+import Footer from "@/components/home-components/Footer";
 
 export default function ExploreMore() {
   return (
+    <>
+    <Navbar/>
     <div>
       {/*Welcome Text */}
       <div className="ml-4 mb-24">
@@ -39,7 +41,7 @@ export default function ExploreMore() {
                 Our Website was created to address the needs of students and
                 hostel managers. We provide a platform where students can easily
                 find and book hostels near their university, while also helping
-                hostel managers effeciently to manage their properties.
+                hostel managers efficiently to manage their properties.
               </p>
             </div>
             <div className="w-96 flex mt-5 gap-4 lg:mt-16">
@@ -206,7 +208,7 @@ export default function ExploreMore() {
         <div className="flex items-center">
           <div>
             <h1 className="font-bold text-4xl mb-5">Recognition and Awards</h1>
-            <p>Discover why we are trustd by thousands of students.</p>
+            <p>Discover why we are trusted by thousands of students.</p>
             <div className="w-96 flex mt-5 gap-4">
               <button className="border-2 border-black p-2 hover:bg-black hover:text-white transition ease-in-out duration-300">
                 Learn More
@@ -396,8 +398,8 @@ export default function ExploreMore() {
                 Our Website provides a supportive community for students and
                 hostel managers, offering a range of benefits. With our
                 platform, students can easily find and book hostels near their
-                university, while hostel managers can effeciently manage their
-                properties and keep track of sudents.
+                university, while hostel managers can efficiently manage their
+                properties and keep track of students.
               </p>
             </div>
             <div className="w-96 flex mt-5 gap-4 lg:mt-16">
@@ -432,7 +434,7 @@ export default function ExploreMore() {
               <p className="font-bold text-lg">
                 The hostel website has made it so easy for me to find and book a
                 hostel near my university. It&apos;s a convenient and reliable
-                platorm.
+                platform.
               </p>
             </div>
             <div className="flex flex-col items-center mt-5">
@@ -562,143 +564,8 @@ export default function ExploreMore() {
           </button>
         </div>
       </div>
-
-      {/*Footer section*/}
-      <div>
-        <div className="lg:flex justify-between m-4">
-          <div className="mb-4 lg:grid grid-cols-4">
-            <div>
-              <h1 className="mb-8 text-2xl font-bold">Logo</h1>
-            </div>
-            <div className="mb-8">
-              <h1 className="font-bold mb-5 text-lg">About Us</h1>
-              <ul className="space-y-2">
-                <li>
-                  <a>Book Now</a>
-                </li>
-                <li>
-                  <a>Contact Us</a>
-                </li>
-                <li>
-                  <a>FAQs</a>
-                </li>
-                <li>
-                  <a>Terms</a>
-                </li>
-                <li>
-                  <a>Privacy</a>
-                </li>
-              </ul>
-            </div>
-            <div className="mb-8">
-              <h1 className="font-bold mb-5 text-lg">Hostels</h1>
-              <ul className="space-y-2">
-                <li>
-                  <a>Hostel One</a>
-                </li>
-                <li>
-                  <a>Hostel Two</a>
-                </li>
-                <li>
-                  <a>Hostel Three</a>
-                </li>
-                <li>
-                  <a>Hostel Four</a>
-                </li>
-                <li>
-                  <a>Hostel Five</a>
-                </li>
-              </ul>
-            </div>
-            <div className="mb-8">
-              <h1 className="font-bold mb-5 text-lg">Services</h1>
-              <ul className="space-y-2">
-                <li>
-                  <a>Services One</a>
-                </li>
-                <li>
-                  <a>Services Two</a>
-                </li>
-                <li>
-                  <a>Services Three</a>
-                </li>
-                <li>
-                  <a>Services Four</a>
-                </li>
-                <li>
-                  <a>Services Five</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="p-4">
-            <div className="mb-8">
-              <h1 className="font-bold mb-5 text-lg">Subscribe</h1>
-              <p className="mb-4">
-                Stay up to date with our latest news and updates
-              </p>
-              <div className="mb-4">
-                <input
-                  className="bg-inherit w-full border border-black px-4 py-3 text-black"
-                  placeholder="Enter email here"
-                ></input>
-              </div>
-              <div className="mb-5">
-                <button className="w-full border border-black hover:bg-black hover:text-white px-4 py-3 font-semibold transition duration-200">
-                  Subscribe
-                </button>
-              </div>
-              <p>
-                By subscribing, you agree to our Privacy policy and consent to
-                receive updates from our company.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="border-t-2 border-black m-3 py-10  lg:flex lg:content-center lg:text-center lg:justify-between">
-          <div className="flex gap-3 text-2xl mb-5 lg:text-3xl lg:order-2">
-            <a href="">
-              <FaFacebook />
-            </a>
-            <a href="">
-              <SlSocialInstagram />
-            </a>
-            <a href="">
-              <FaXTwitter />
-            </a>
-            <a href="">
-              <FaLinkedin />
-            </a>
-            <a href="">
-              <TiSocialYoutube />
-            </a>
-          </div>
-
-          <div className="lg:flex lg:gap-5 lg:order-1">
-            <div className="mb-5 lg:order-2">
-              <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
-                <li>
-                  <a href="">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="">Terms of Service</a>
-                </li>
-                <li>
-                  <a href="">Cookie Settings</a>
-                </li>
-              </ul>
-            </div>
-            <div className="lg:order-1">
-              <p>
-                &copy; {new Date().getFullYear()} HostelHub. All rights
-                reserved.{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        `
-      </div>
     </div>
+    <Footer/>
+    </>
   );
 }

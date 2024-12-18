@@ -19,7 +19,7 @@ export default function MeetOurTeam (){
 
       <div className="flex flex-col gap-10 py-10">
         <div className="flex flex-col lg:flex-row gap-10 py-10">
-          <div>
+          <div className="flex-[1]">
             <Image
               src={Profile1}
               alt=""
@@ -32,7 +32,7 @@ export default function MeetOurTeam (){
               ensuring a comfortable stay for students.
             </p>
           </div>
-          <div>
+          <div className="flex-[1]">
             <Image
               src={Profile2}
               alt=""
@@ -44,7 +44,7 @@ export default function MeetOurTeam (){
              Jane supports the manager day-to-day tasks and assists with students inquiies and concerns.
             </p>
           </div>
-          <div>
+          <div className="flex-[1]">
             <Image
               src={Profile3}
               alt=""
@@ -59,7 +59,7 @@ export default function MeetOurTeam (){
         </div>
 
         <div className="flex flex-col lg:flex-row gap-10 pb-28">
-        <div>
+        <div className="flex-[1]">
             <Image
               src={Profile4}
               alt=""
@@ -71,7 +71,7 @@ export default function MeetOurTeam (){
               Sarah manages the front desk and assists students with check-in, check-out and general inquiries.
             </p>
           </div>
-          <div>
+          <div className="flex-[1]">
             <Image
               src={Profile5}
               alt=""
@@ -83,7 +83,7 @@ export default function MeetOurTeam (){
               Join our team and be part of our hostel community
             </p>
           </div>
-          <div>
+          <div className="flex-[1]">
             <Image
               src={Profile6}
               alt=""
