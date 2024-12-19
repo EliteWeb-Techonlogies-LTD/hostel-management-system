@@ -1,20 +1,10 @@
 
+import LoginPage from "@/components/login-and-sign-up-components/Login"
 
 
 
 export default function Login (){
   return (
-    <>
-      <section>
-          <div className="">
-              <div className="">
-
-              </div>
-              <div>
-                  <h1 className="">SIGN IN</h1>
-              </div>
-          </div>
-      </section>
-   </>
+   <LoginPage/>
   )
 }

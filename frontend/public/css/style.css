@@ -1,9 +1,35 @@
 .hero{
-  /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('../images/ano.webp'); */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../HD-HOSTEL-IMAGES/bg4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card:hover{
   transition: ease-in-out 0.5s;
   transform: scale(1.02);
+}
+
+.nav-items:hover{
+  color: #332590;
+}
+
+.hostelhero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url("../HD-HOSTEL-IMAGES/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AboutHero{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url('../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.BookingHero{
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),url("../HD-HOSTEL-IMAGES/b5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ContactMain{
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),url("../HD-HOSTEL-IMAGES/bg7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -28,9 +28,11 @@ export default function ViewHostels() {
               </button>
             </div>
 
-            <span className="p-3 mb-4 font-semibold bg-black text-white">
+           <Link href="/gallery">
+           <span className="p-3 mb-4 font-semibold bg-black text-white">
               View Hostel &nbsp;&nbsp;
             </span>
+           </Link>
             </div>
         ))}
       </div>

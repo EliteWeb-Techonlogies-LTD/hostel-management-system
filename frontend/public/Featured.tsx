@@ -43,7 +43,7 @@ const details = [
     date: "11 Jan 2022 . 5 min read",
   },
   {
-    id: 1,
+    id: 2,
     img: "/images/ano.webp",
     header: "Tips",
     title: " The Benefit of Communal Spaces",
@@ -53,7 +53,7 @@ const details = [
     date: "11 Jan 2022 . 5 min read",
   },
   {
-    id: 1,
+    id: 3,
     img: "/images/ano.webp",
     header: "Spaces",
     title: " The Importance of Room Cleaning Services",

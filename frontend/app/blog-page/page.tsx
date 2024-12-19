@@ -8,6 +8,8 @@ import { SlLocationPin } from "react-icons/sl";
 import { RiStarSFill } from "react-icons/ri";
 import { FaWebflow } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
+import BlogArticle from "@/public/BlogArticles";
+import Navbar from "@/components/home-components/Navbar";
 
 
 
@@ -16,9 +18,10 @@ export default function Blog(){
     return(
 
         <>
+        <Navbar/>
       <main className="mx-4 lg:mx-10">
-        {/* Discover the Best Blogs */}
 
+        {/* Discover the Best Blogs */}
         <section className="my-9 text-center">
           <div className="flex flex-col gap-4">
             <span className="font-semibold">Latest</span>
@@ -47,195 +50,7 @@ export default function Blog(){
           </div>
         </section>
 
-        {/* Articles section 1*/}
-
-        <section className="mb-9 lg:my-16">
-          <div className="lg:flex lg:gap-8 mt-4">
-            {/* Service 1 */}
-            <div className=" mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  10 Tips for Successful Blogging
-                </h3>
-                <p className="font-medium">
-                  Learn how to create engaging content and grow your audience
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">John Doe</h3>
-                    <p>11 Feb 2022 . 7 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 2 */}
-
-            <div className="mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  The Art of Travel Photography
-                </h3>
-                <p className="font-medium">
-                  Capture stunning moments with these experts tips
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">Jane Smith</h3>
-                    <p>15 Feb 2022 . 6 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 3 */}
-            <div className="mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  Delicious Recipes for Every Occasion
-                </h3>
-                <p className="font-medium">
-                  Explore a variety of mouthwatering dishes to satisfy your
-                  cravings.
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">Emily Johnson</h3>
-                    <p>20 Feb 2022 . 4 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles section 2 */}
-
-        <section className="mb-9 lg:my-6">
-          <div className="lg:flex lg:gap-8 mt-4">
-            {/* Service 1 */}
-            <div className=" mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  10 Must-Have Fashion Accessories
-                </h3>
-                <p className="font-medium">
-                  Stay stylish with these trendy accessories for every outfit.
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">Sarah Thompson</h3>
-                    <p>25 Feb 2022 . 5 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 2 */}
-
-            <div className="mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  Tips for a Healthy Lifestyle
-                </h3>
-                <p className="font-medium">
-                  Discover the secrets of living a balanced and fulfilling life
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">Micheal Brown</h3>
-                    <p>1 Mar 2022 . 8 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 3 */}
-            <div className="mb-8">
-              <div className="mb-4">
-                <Image src={Himage} alt="" />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">Category</span>
-                <h3 className="font-bold text-2xl">
-                  Exploring the Outdoors: Hiking Tips
-                </h3>
-                <p className="font-medium">
-                  Embark on unforgettable hiking adventures with these essential
-                  tips.
-                </p>
-                <div className="flex gap-5">
-                  <Image
-                    src={Himage}
-                    alt=""
-                    className="rounded-[100%] h-[50px] w-[50px]"
-                  />
-
-                  <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold">David Wilson</h3>
-                    <p>5 Mar 2022 . 9 min read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       <BlogArticle/>
 
         {/* Discover Hostel Life */}
 
