@@ -13,10 +13,10 @@ export default function Hero() {
       </p>
 
       <div className="flex gap-5 justify-center w-full py-10 text-[#FAF9F6]">
-        <Link href="/hostel"><button className="text-white border-[1px] border-[#332590] bg-[#332590]  py-2 px-5 rounded-full font-semibold text-xl transition ease-in-out duration-300">
+        <Link href="/hostel"><button className="text-white border-[1px] border-[#332590] bg-[#332590] hover:bg-inherit hover:border-[#332590]  py-2 px-5 rounded-full font-semibold text-xl transition ease-in-out duration-300">
           Explore
         </button></Link>
-        <Link href="/project"><button className="py-2 px-2 font-semibold text-xl  rounded-full h hover:border-[1px] bg-white text-black border-[1px] border-white">
+        <Link href="/project"><button className="py-2 px-2 font-semibold text-xl rounded-full hover:border-[1px] hover:bg-inherit hover:text-white bg-white text-[#332590] border-[1px] border-white transition ease-in-out duration-300">
           Learn More
         </button></Link>
       </div>

@@ -8,7 +8,7 @@ export default function Simply() {
     <section className="xl:flex items-center gap-10 md:px-[4.5rem] px-5 pt-10">
       <div className="flex-[1]">
         <small className="font-semibold text-lg">Simplified</small>
-        <h1 className="md:text-5xl text-4xl font-bold py-3 md:w-[600px] leading-[67px] w-[340px]">
+        <h1 className="md:text-5xl text-[#332590] text-4xl font-bold py-3 md:w-[600px] leading-[67px] w-[340px]">
           Find and Book your Ideal Hostel
         </h1>
         <p className="text-xl leading-loose w-[350px] md:w-[600px]">
@@ -26,10 +26,10 @@ export default function Simply() {
           ))}
         </div>
         <div className="flex gap-10 pb-10">
-        <Link href="/hostel"><button className="text-white border-[1px] border-[#332590] bg-[#332590]  py-2 px-5 rounded-full font-semibold text-xl transition ease-in-out duration-300">
+        <Link href="/hostel"><button className="text-white border-[1px] border-[#332590] bg-[#332590] hover:border-[#332590] hover:bg-inherit hover:text-[#332590] py-2 px-5 rounded-full font-semibold text-xl transition ease-in-out duration-300">
           Explore
         </button></Link>
-        <Link href="/project"><button className="py-2 px-2 font-semibold text-xl  rounded-full h hover:border-[1px] bg-white text-black border-[1px] border-black">
+        <Link href="/project"><button className="py-2 px-2 font-semibold text-xl  rounded-full h hover:border-[1px] text-[#332590] border-[1px] border-[#332590] hover:bg-#fff hover:text-[#332590] hover:border-[#332590] hover:shadow:lg">
           Learn More
         </button></Link>
             </div>

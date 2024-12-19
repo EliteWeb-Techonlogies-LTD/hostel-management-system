@@ -24,7 +24,7 @@ function QuestionPage() {
               href="mailto:"
               className="font-semibold text-s6 hover:text-s6/30"
             >
-              Reach out to us{" "}
+              <span className="text-[#98159f]">Reach out to us</span>{" "}
             </a>
             and we will get in touch with you.
           </p>

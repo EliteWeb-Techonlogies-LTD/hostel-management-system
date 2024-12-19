@@ -29,8 +29,8 @@ export default function Navbar (){
 
       </nav>
       <div className="hidden lg:flex flex-col lg:flex-row py-8 gap-5">
-            <Link href="/signup"><button className="border-[1px] border-black bg-[#FAF9F6] text-[#000] font-semibold py-2 px-5 rounded-full">Sign Up</button></Link>
-            <Link href="/login"><button className="border-[1px] border-[#332590] bg-[#332590] font-semibold text-[#fff] py-2 px-5 rounded-full ">Log In</button></Link>
+            <Link href="/signup"><button className="border-[1px] border-[#332590] text-[#332590] hover:shadow-lg transition ease-in-out duration-300 font-semibold py-2 px-5 rounded-full">Sign Up</button></Link>
+            <Link href="/login"><button className="border-[1px] border-[#332590] bg-[#332590] hover:border-[#332590] hover:bg-[#4836bd] transition ease-in-out duration-300 font-semibold text-[#fff] py-2 px-5 rounded-full ">Log In</button></Link>
         </div>
         <div className="lg:hidden flex gap-4">
           <button onClick={toggleMenu} className="text-2xl">
