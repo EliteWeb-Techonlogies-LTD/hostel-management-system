@@ -1,11 +1,11 @@
 import { FaCube } from "react-icons/fa";
 import Image from "next/image";
-import Img from "../../public/images/college-students.gif"
+import Img from "../../public/illutration/Houses-amico.png"
 import Link from "next/link";
 
 export default function Simply() {
   return (
-    <section className="xl:flex items-center gap-10 md:px-[4.5rem] px-5 py-20">
+    <section className="xl:flex items-center gap-10 md:px-[4.5rem] px-5 pt-10">
       <div className="flex-[1]">
         <small className="font-semibold text-lg">Simplified</small>
         <h1 className="md:text-5xl text-4xl font-bold py-3 md:w-[600px] leading-[67px] w-[340px]">
@@ -35,7 +35,7 @@ export default function Simply() {
             </div>
       </div>
       <div className="flex-[1.5]">
-            <Image src={Img} alt="" className="h-[60vh]" />
+            <Image src={Img} alt="" className="h-[70vh]" />
           </div>
     </section>
   );

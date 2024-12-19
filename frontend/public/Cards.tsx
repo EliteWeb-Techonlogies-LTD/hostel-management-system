@@ -18,13 +18,13 @@ export default function Cards() {
       {/* cards */}
       <div className="mt-10 flex flex-col gap-6 lg:flex-row justify-center">
         {cardDetails.map((cards) => (
-          <div key={cards.id} className="py-5 px-5 shadow-md rounded-xl">
+          <div key={cards.id} className="py-5 px-5">
             <Image
               src={cards.img}
               alt={cards.title}
               width={1000}
-              height={1000}
-              className=""
+              height={500}
+              className="h-[300px]"
             />
             <h2 className="text-xl font-bold py-2">{cards.title}</h2>
             <p className="text-lg">{cards.desc}</p>
@@ -39,19 +39,19 @@ export default function Cards() {
 const cardDetails = [
   {
     id: 1,
-    img: "/images/ano.webp",
+    img: "/illutration/Search-engines-cuate.png",
     title: "Search Your Ideal Hostel",
     desc: " Use our intuitive search function to browse through a wide selection of hostels near your university.",
   },
   {
     id: 2,
-    img: "/images/ano.webp",
+    img: "/illutration/Houses-amico.png",
     title: "Compare Prices and Amenities",
     desc: " Compare prices, amenities and reviews to make an informed decision.",
   },
   {
     id: 3,
-    img: "/images/ano.webp",
+    img: "/illutration/Hotel-Booking-cuate.png",
     title: "Book a Reserve with Confidence",
     desc: "  Once you&apos;ve found the perfect hostel, book and reserve it hassle-free through our secure platform.",
   },
