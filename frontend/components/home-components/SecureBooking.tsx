@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Img from "../../public/images/ano.webp"
+import Img from "../../public/illutration/Site-Stats-pana.png"
 
 export default function SecureBooking() {
   return (
-    <section className="lg:flex lg:flex-row-reverse items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-10 text-[#000]">
-      <div>
+    <section className="lg:flex lg:flex-row-reverse items-center gap-10 md:px-[4.5rem] pt-5 px-5 pb-5 text-[#000]">
+      <div className="flex-[1]">
         {bookingDetails.map((info) => (
           <div key={info.id}>
           <h1 className="text-3xl font-semibold py-3 text-[#000]">{info.title}</h1>
@@ -13,7 +13,7 @@ export default function SecureBooking() {
         ))}
       </div>
 
-      <div>
+      <div className="flex-[1]">
         <Image src={Img} alt=""/>
       </div>
     </section>

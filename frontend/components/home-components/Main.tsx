@@ -4,7 +4,8 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLocationPin } from "react-icons/fa6";
 import Image from "next/image";
 import Img from "../../public/images/ano.webp";
-import Img3 from "../../public/images/agoo-hostel.jpg";
+import Img3 from "../../public/illutration/illustra.jpg";
+import Img2 from "../../public/illutration/illu.jpg";
 import QuestionPage from "./FaqHomePage";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -20,7 +21,7 @@ export default function Main() {
 
       <div>
         {/* The convenience of the hostel website */}
-        <div className="xl:flex items-center gap-16 md:px-[4rem] py-2 px-5">
+        <div className="flex flex-col lg:flex-row items-center gap-16 md:px-[4rem] pt-32 px-5">
           <div className="w-[50%] leading-loose">
             <small className="font-bold text-lg">Convenience</small>
             <h1 className="md:text-5xl text-4xl font-bold pt-5 pb-8 md:w-[600px] leading-[67px] w-[340px]">
@@ -164,8 +165,8 @@ export default function Main() {
           </div>
         </section>
 
-        <section className="border-[1px] border-black mx-3 my-5 lg:mx-20 pt-5 lg:pt-0 flex flex-col lg:flex-row items-center gap-10 text-[#00]">
-          <div className="px-5 ">
+        <section className="mx-3 my-5 lg:mx-20 pt-5 lg:pt-0 flex flex-col lg:flex-row items-center gap-10 text-[#00]">
+          <div className="px-5 flex-[1]">
             <h1 className="text-4xl font-semibold py-5">
               Get the Latest Updates Here
             </h1>
@@ -189,8 +190,8 @@ export default function Main() {
               Conditions.
             </p>
           </div>
-          <div>
-            <Image src={Img} alt="" />
+          <div className="flex-[0.8]">
+            <Image src={Img2} alt="" />
           </div>
         </section>
 
