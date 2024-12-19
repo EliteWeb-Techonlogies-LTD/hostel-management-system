@@ -12,7 +12,7 @@ export default function Navbar (){
     };
   return (
     <>
-    <header className="flex lg:flex items-center justify-between gap-10 px-10 lg:shadow-sm lg:px-28 sticky top-0 left-0 bg-white h-[70px]">
+    <header className="flex lg:flex items-center justify-between gap-10 px-10 lg:shadow-sm lg:px-28 sticky top-0 left-0 bg-white h-[70px] z-[1000]">
       <div>
         <h1 className="text-2xl font-bold text-[#332590]">Logo</h1>
       </div>
