@@ -12,6 +12,7 @@ import AboutTeam from "@/public/AboutTeam";
 import Awards from "@/components/about-components/Awards";
 import LogoSlider from "@/components/about-components/LogoSlider";
 import Benefits from "@/components/about-components/Benefits";
+// import Image from "next/image";
 
 export default function ExploreMore() {
   return (
@@ -47,7 +48,7 @@ export default function ExploreMore() {
               </p>
             </div>
             <div className="flex flex-col items-center mt-5">
-              <img className="w-10 rounded-full mb-5" src="./male.jpg" />
+              {/* <Image src="./male.jpg" className="w-10 rounded-full mb-5" /> */}
               <p>John doe</p>
               <p>Student, ABC University</p>
             </div>

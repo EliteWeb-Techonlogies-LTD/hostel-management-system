@@ -8,12 +8,19 @@ import Img3 from "../../public/illutration/illustra.jpg";
 import Img2 from "../../public/illutration/illu.jpg";
 import QuestionPage from "./FaqHomePage";
 import { IoIosArrowForward } from "react-icons/io";
+// import {
+//   Carousel,
+//   initTWE,
+// } from "tw-elements";
+// initTWE({ Carousel });
 
 import '../../public/css/style.css'
 
 
 
 export default function Main() {
+
+  
   
   return (
     <section className="">
@@ -58,7 +65,7 @@ export default function Main() {
                 </h1>
               </div>
 
-              <div className="flex-[1]">
+              <div className="flex-[1] lg:my-auto">
                 <p className="text-xl leading-relaxed">
                   In addition to providing comfortable accommodation we offer a
                   range of support services,valuable hostel management
