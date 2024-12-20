@@ -9,7 +9,7 @@ import { TiSocialYoutube } from "react-icons/ti";
 export default function Footer () {
     return (
         <div>
-            <div className="lg:flex justify-between py-5 bg-[#332590] text-white">
+            <div className="lg:flex justify-between py-5">
                 <div className="p-4 mb-4 lg:grid grid-cols-4 ">
 
                     <h1 className="mb-8 text-3xl font-bold">Logo</h1>
@@ -46,14 +46,14 @@ export default function Footer () {
                 </div>
 
                 <div className="p-4">
-                    <div className="mb-8 text-white">
+                    <div className="mb-8">
                         <h1 className="font-bold mb-5 text-lg">Subscribe</h1>
                         <p className="mb-4">Stay up to date with our latest news and updates</p>
                         <div className="mb-4">
-                            <input className="bg-inherit w-full border border-white focus:outline-none px-4 py-3 text-white text-xl" placeholder="Enter email here"></input>
+                            <input className="bg-inherit w-full border border-[#332590] focus:outline-none px-4 py-3 text-white text-xl" placeholder="Enter email here"></input>
                         </div>
                         <div className="mb-5">
-                                <button className="w-full border bg-[#FAF9F6] text-xl text-[#332590] border-white px-4 py-3 font-semibold transform hover:scale-y-105 transition ease-in-out duration-300">Subscribe</button>
+                                <button className="w-full border bg-[#332590] text-xl text-white border-[#332590] px-4 py-3 font-semibold transform hover:scale-y-105 transition ease-in-out duration-300">Subscribe</button>
 
                         </div>
                         <p>By subscribing, you agree to our Privacy policy and consent to receive updates from our company.</p>
@@ -61,22 +61,22 @@ export default function Footer () {
                 </div>
             </div>
 
-            <div className="h-20 lg:flex lg:content-center lg:text-center lg:justify-around items-center">
+            <div className="h-20 lg:flex lg:content-center lg:text-center lg:justify-around items-center text-[#332590]">
 
-                <div className="flex gap-3 text-2xl lg:text-3xl lg:order-2 text-[#98159f]">
-                    <a href="" className="hover:text-[#662269]"><TiSocialFacebookCircular /></a>
-                    <a href="" className="hover:text-[#662269]"><SlSocialInstagram /></a>
-                    <a href="" className="hover:text-[#662269]"><TiSocialTwitter /></a>
-                    <a href="" className="hover:text-[#662269]"><TiSocialLinkedin /></a>
-                    <a href="" className="hover:text-[#662269]"><TiSocialYoutube /></a>
+                <div className="flex gap-3 text-2xl lg:text-3xl lg:order-2">
+                    <a href="" className="hover:text-[#6b59e0]"><TiSocialFacebookCircular /></a>
+                    <a href="" className="hover:text-[#6b59e0]"><SlSocialInstagram /></a>
+                    <a href="" className="hover:text-[#6b59e0]"><TiSocialTwitter /></a>
+                    <a href="" className="hover:text-[#6b59e0]"><TiSocialLinkedin /></a>
+                    <a href="" className="hover:text-[#6b59e0]"><TiSocialYoutube /></a>
                 </div>
 
-                <div className="lg:flex lg:gap-5 lg:order-1 text-[#98159f]">
+                <div className="lg:flex lg:gap-5 lg:order-1 ">
                     <div className="lg:order-2">
                         <ul className="underline lg:flex lg:items-center lg:gap-5 lg:content-center">
-                            <li><a href="" className="hover:text-[#662269]">Privacy Policy</a></li>
-                            <li><a href="" className="hover:text-[#662269]">Terms of Service</a></li>
-                            <li><a href="" className="hover:text-[#662269]">Cookie Settings</a></li>
+                            <li><a href="" className="hover:text-[#6b59e0]">Privacy Policy</a></li>
+                            <li><a href="" className="hover:text-[#6b59e0]">Terms of Service</a></li>
+                            <li><a href="" className="hover:text-[#6b59e0]">Cookie Settings</a></li>
                         </ul>
                     </div>
                     <div className="lg:order-1">
