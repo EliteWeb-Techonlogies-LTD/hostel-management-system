@@ -131,14 +131,14 @@ export default function Main() {
 
             <div className="flex flex-col md:flex-row gap-5">
               <div>
-                <h1 className="text-5xl font-bold py-5 text-[#98159f]">50%</h1>
+                <h1 className="text-5xl font-bold py-5 ">50%</h1>
                 <p>
                   Hostels available 1000+ | Students Served: 5000+ | Bookings
                   Made: 10000+
                 </p>
               </div>
               <div>
-                <h1 className="text-5xl font-bold py-5 text-[#98159f]">50%</h1>
+                <h1 className="text-5xl font-bold py-5 ">50%</h1>
                 <p>
                   Satisfied Students: 95% | Successful Bookings: 98% | Happy
                   Hostel Managers
@@ -212,21 +212,21 @@ export default function Main() {
           </div>
 
           <div className="lg:pr-60">
-            <div className="flex gap-10 items-start text-[#98159f]">
+            <div className="flex gap-10 items-start ">
               <SiGmail size={30} />
               <div className="flex flex-col gap-2 text-[#000]">
                 <p className="font-bold text-xl">Email</p>
                 <p className="underline">contact@hostelhub.com</p>
               </div>
             </div>
-            <div className="flex gap-10 items-start py-5 text-[#98159f]">
+            <div className="flex gap-10 items-start py-5 ">
               <FaPhone size={30} />
               <div className="flex flex-col gap-2 text-[#000]">
                 <p className="font-bold text-xl">Phone</p>
                 <p className="underline">+1 (555) 123-4567</p>
               </div>
             </div>
-            <div className="flex gap-10 items-start text-[#98159f]">
+            <div className="flex gap-10 items-start">
               <FaLocationPin size={30} />
               <div className="flex flex-col gap-2 text-[#000]">
                 <p className="font-bold text-xl">Office</p>

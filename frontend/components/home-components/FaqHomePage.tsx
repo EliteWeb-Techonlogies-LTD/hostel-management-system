@@ -24,7 +24,7 @@ function QuestionPage() {
               href="mailto:"
               className="font-semibold text-s6 hover:text-s6/30"
             >
-              <span className="text-[#98159f]">Reach out to us</span>{" "}
+              <span className="">Reach out to us</span>{" "}
             </a>
             and we will get in touch with you.
           </p>
@@ -34,7 +34,7 @@ function QuestionPage() {
                 <dt className="border-[1px] border-black px-3 py-3">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="flex w-full items-start justify-between text-left text-gray-900"
+                    className="flex w-full items-start justify-between text-left"
                   >
                     <span className="text-base font-semibold leading-7">
                       {faq.question}
