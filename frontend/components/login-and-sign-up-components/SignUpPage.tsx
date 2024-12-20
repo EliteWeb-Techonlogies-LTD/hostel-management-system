@@ -8,7 +8,7 @@ import "@/public/css/style2.css";
 export default function SignUpPage() {
   return (
     <main className="lg:flex lg:max-w-[900px] justify-center items-center lg:mx-auto mt-2 h-[100vh]">
-      <section className="bg-white py-12 lg:w-[550px] text-center lg:max-w-[550px] lg:mx-auto log rounded-lg">
+      <section className="bg-white py-12 lg:w-[550px] text-center lg:max-w-[550px] lg:mx-auto log rounded-lg h-[600px]">
         <div className="block lg:block">
           <h1 className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#332790] to-[#8d1a9b] text-5xl font-bold after:content-[''] after:w-[60px] after:h-1 after:bg-purple-800 after:absolute after:bottom-[-5px] after:-translate-y-1/2 after:left-[230px]">
             SIGN UP
@@ -88,7 +88,7 @@ export default function SignUpPage() {
 
       </section>
 
-      <section className="hidden lg:flex items-center justify-center lg:w-[500px]  sidePane text-white h-[550px]">
+      <section className="hidden lg:flex items-center justify-center lg:w-[500px]  sidePane text-white h-[600px]">
         <div className="flex flex-col justify-center items-center gap-5 w-[400px]  p-8">
           <div className="flex flex-col items-center justify-center gap-2">
             <GiPalmTree />

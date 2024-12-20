@@ -12,7 +12,7 @@ function QuestionPage() {
   };
 
   return (
-    <div className="bg-white w-full max-w-4xl mx-auto">
+    <section className="bg-white w-full max-w-4xl mx-auto">
       <div className="px-6 py-24 sm:py-24 lg:py-24">
         <div className="divide-slate-950">
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900 text-center">
@@ -77,7 +77,7 @@ function QuestionPage() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
