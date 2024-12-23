@@ -1,12 +1,23 @@
-/** @format */
 
-import Image from "next/image";
+import Footer from '@/components/home-components/Footer';
+import Hero from '@/components/home-components/Hero';
+import Main from '@/components/home-components/Main';
+import Navbar from '@/components/home-components/Navbar';
+import SecureBooking from '@/components/home-components/SecureBooking';
+import Simply from '@/components/home-components/Simply';
+import Cards from '@/public/Cards';
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-7xl font-bold">ElitWeb Technologies LTD</h1>
-      <p className="text-3xl font-bold">Project will start soon</p>
+    <main className="bg-white900">
+      <Navbar/>
+      <Hero/>
+      <Simply/>
+      <SecureBooking/>
+      <Cards/>
+      <Main/>
+     <Footer/>
     </main>
   );
 }

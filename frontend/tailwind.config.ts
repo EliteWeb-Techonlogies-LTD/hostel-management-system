@@ -5,9 +5,22 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./public/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      animation: {
+        'loop-scroll': 'loop-scroll 50s linear infinite',
+      },
+      backgroundImage: {
+        'heroImage': "url('/hostel-management-system/frontend/public/images/h-image.jpg')"        
+      },
+      keyframes: {
+        'loop-scroll': {
+          from: { transform: 'translateX(0)'},
+          to: { transform: 'translate(-100%)'},
+        },
+      },
       colors: {
         purple: "#CBACF9",
         headerColor: "#878787",
