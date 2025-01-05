@@ -3,6 +3,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { useEffect } from 'react';
+import Image from "next/image";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import Himage from "@/public/images/h-image.jpg";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { FaCube } from "react-icons/fa";
 
 export default function Navbar (){
     const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +16,56 @@ export default function Navbar (){
     const toggleMenu = () => {
       setIsOpen(!isOpen);
     };
+
+    const MyComponent = () => { 
+      useEffect(() => { 
+        const dropDownMobile = document.getElementById("dropDownMobile");
+        const dropDownLarge = document.getElementById("dropDownLarge"); 
+        const dropDownBtn = document.getElementById("dropDownBtn"); 
+        if (dropDownBtn) { 
+          dropDownBtn.addEventListener("click", () => { 
+            if (window.innerWidth >= 1024) { 
+              // Large screens 
+              if (dropDownLarge) { 
+                dropDownLarge.classList.toggle("hidden");    
+              } 
+            } else { 
+              // Mobile screens 
+              if (dropDownMobile) { 
+                dropDownMobile.classList.toggle("hidden");
+              }
+            }
+          }); 
+        } 
+      }, [])
+    };
+
+    const MyComponent2 = () => { 
+        useEffect(() => { 
+          const dropDownMobile = document.getElementById("dropDownMobile");
+          const dropDownLarge = document.getElementById("dropDownLarge"); 
+          const dropDownBtn2 = document.getElementById("dropDownBtn2"); 
+          if (dropDownBtn2) { 
+            dropDownBtn2.addEventListener("click", () => { 
+              if (window.innerWidth >= 1024) { 
+                // Large screens 
+                if (dropDownLarge) { 
+                  dropDownLarge.classList.toggle("hidden");    
+                } 
+              } else { 
+                // Mobile screens 
+                if (dropDownMobile) { 
+                  dropDownMobile.classList.toggle("hidden");
+                }
+              }
+            }); 
+          } 
+        }, [])
+      };
+
+    MyComponent();
+    MyComponent2();
+
   return (
     <>
     <header className="flex lg:flex items-center justify-between gap-10 px-10 lg:shadow-sm lg:px-28 sticky top-0 left-0 bg-white h-[70px] z-[1000]">
@@ -25,13 +81,30 @@ export default function Navbar (){
                     {navbar.title}
                 </Link>
             ))}
+            <MdKeyboardArrowDown className="text-3xl cursor-pointer ml-[-5px]" id="dropDownBtn"/>
+
+            
+            
         </div>
 
+        
+
+
+
       </nav>
+
+
+      
+
       <div className="hidden lg:flex flex-col lg:flex-row py-8 gap-5">
             <Link href="/signup"><button className="border-[1px] border-[#332590] text-[#332590] hover:shadow-lg transition ease-in-out duration-300 font-semibold py-2 px-5 rounded-full">Sign Up</button></Link>
             <Link href="/login"><button className="border-[1px] border-[#332590] bg-[#332590] hover:border-[#332590] hover:bg-[#4836bd] transition ease-in-out duration-300 font-semibold text-[#fff] py-2 px-5 rounded-full ">Log In</button></Link>
         </div>
+
+
+        
+
+
         <div className="lg:hidden flex gap-4">
           <button onClick={toggleMenu} className="text-2xl">
             {isOpen ? <FaTimes /> : <FaBars />}
@@ -47,16 +120,226 @@ export default function Navbar (){
                     {navbar.title}
                 </Link>
             ))}
-              </div>
+
+        <MdKeyboardArrowDown className="text-3xl cursor-pointer ml-[-5px]" id="dropDownBtn2"/>
+
+           </div>
+
+
+            {/* // DropDown */}
+           <section id="dropDownMobile" className="hidden ml-4 lg:hidden">
+        
+        <div className="flex flex-row justify-evenly">
+            {/* Popular Hostels Div */}
+        <div className="my-8 flex flex-col gap-3 lg:w-3/12">
+            <span className="font-semibold">Popular Hostels</span>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Hostel One</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Check Availability</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Hostel Two</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Room Types</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                    <a href=""><span className="font-semibold">Hostel Three</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Facilities</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                    <a href=""><span className="font-semibold">Hostel Four</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Reviews</span></a>
+                </div>
+            </div>
+        </div>
+
+        {/* Featured Articles Div */}
+        <div className="my-8 flex flex-col gap-3 lg:w-3/12">
+            <span className="font-semibold">Featured Articles</span>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Article One</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Article Two</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Article Three</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
+                </div>
+            </div>
+            <div className="flex gap-3">
+                <FaCube className="mt-[6px]" />
+                <div className="flex flex-col">
+                <a href=""><span className="font-semibold">Article Four</span>
+                    <span className="font-medium text-text-decoration-none hidden lg:block">Read More</span></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        {/* Latest Blog Posts Div */}
+        <div className="bg-slate-200 p-8 flex flex-col gap-5 mr-4 lg:mr-0 lg:w-5/12">
+            <span className="font-semibold">Latest Blog Posts</span>
+            <div className="lg:flex lg:flex-row lg:gap-4">
+                <Image src={Himage} alt="" className="lg:w-[100px] lg:h-[80px] lg:mt-3" />
+                <div className="flex flex-col gap-1 mt-3 lg:mt-0">
+                    <span className="font-semibold">Post Title One</span>
+                    <p className="font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="" className="text-decoration-underline">Read More</a>
+                </div>
+            </div>
+            <div className="lg:flex lg:flex-row lg:gap-4">
+                <Image src={Himage} alt="" className="lg:w-[100px] lg:h-[80px] lg:mt-3" />
+                <div className="flex flex-col gap-1 mt-3 lg:mt-0">
+                    <span className="font-semibold">Post Title Two</span>
+                    <p className="font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="" className="text-decoration-underline">Read More</a>
+                </div>
+            </div>
+            <div className="flex gap-2 cursor-pointer">
+                <a href="" className="text-decoration-none">View All</a>
+                <MdKeyboardArrowRight className="text-2xl" />
+            </div>
+        </div>
+
+
+    </section>            
+            
+
 
               <div className="flex flex-col gap-5">
               <Link href="/signup"><button className="border-[1px] w-full border-black bg-[#FAF9F6] text-[#000] font-semibold py-2 px-5 ">Sign Up</button></Link>
             <Link href="/login"><button className="border-[1px] w-full border-black bg-[#000] font-semibold text-[#fff] py-2 px-5 ">Log In</button></Link>
               </div>
             </nav>
+
+            
           </div>
         )}
     </header>
+
+    <section id="dropDownLarge" className="hidden">
+    
+    <div  className="ml-4 lg:mt-1 lg:pl-12 lg:flex lg:gap-12 z-50 shadow-2xl shadow-slate-200 lg:max-h-[380px] lg:w-full">
+        
+    {/* Popular Hostels Div */}
+    <div className="my-8 flex flex-col gap-3 lg:w-3/12">
+        <span className="font-semibold">Popular Hostels</span>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Hostel One</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Check Availability</a>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Hostel Two</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Room Types</a>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Hostel Three</span>
+                <Link href="" className="font-medium text-text-decoration-none hidden lg:block">Facilities</Link>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Hostel Four</span>
+                <Link href="" className="font-medium text-text-decoration-none hidden lg:block">Reviews</Link>
+            </div>
+        </div>
+    </div>
+
+    {/* Featured Articles Div */}
+    <div className="my-8 flex flex-col gap-3 lg:w-3/12">
+        <span className="font-semibold">Featured Articles</span>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Article One</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Article Two</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Article Three</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+            </div>
+        </div>
+        <div className="flex gap-3">
+            <FaCube className="mt-[6px]" />
+            <div className="flex flex-col">
+                <span className="font-semibold">Article Four</span>
+                <a href="" className="font-medium text-text-decoration-none hidden lg:block">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    {/* Latest Blog Posts Div */}
+    <div className="bg-slate-200 p-8 flex flex-col gap-5 mr-4 lg:mr-0 lg:w-5/12">
+        <span className="font-semibold">Latest Blog Posts</span>
+        <div className="lg:flex lg:flex-row lg:gap-4">
+            <Image src={Himage} alt="" className="lg:w-[100px] lg:h-[80px] lg:mt-3" />
+            <div className="flex flex-col gap-1 mt-3 lg:mt-0">
+                <span className="font-semibold">Post Title One</span>
+                <p className="font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="" className="text-decoration-underline">Read More</a>
+            </div>
+        </div>
+        <div className="lg:flex lg:flex-row lg:gap-4">
+            <Image src={Himage} alt="" className="lg:w-[100px] lg:h-[80px] lg:mt-3" />
+            <div className="flex flex-col gap-1 mt-3 lg:mt-0">
+                <span className="font-semibold">Post Title Two</span>
+                <p className="font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="" className="text-decoration-underline">Read More</a>
+            </div>
+        </div>
+        <div className="flex gap-2 cursor-pointer">
+            <a href="" className="text-decoration-none">View All</a>
+            <MdKeyboardArrowRight className="text-2xl" />
+        </div>
+    </div>
+
+
+</div>
+
+    
+    </section>
+
+
   </>
   
   

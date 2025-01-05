@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+// shoelace
+import '@shoelace-style/shoelace/dist/themes/light.css';
+import ShoelaceSetup from "./shoelace-setup";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ShoelaceSetup>
         {children}
+        </ShoelaceSetup>
       </body>
     </html>
   );

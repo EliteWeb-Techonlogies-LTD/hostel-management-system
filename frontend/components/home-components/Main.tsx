@@ -8,13 +8,8 @@ import Img3 from "../../public/illutration/illustra.jpg";
 import Img2 from "../../public/illutration/illu.jpg";
 import QuestionPage from "./FaqHomePage";
 import { IoIosArrowForward } from "react-icons/io";
-// import {
-//   Carousel,
-//   initTWE,
-// } from "tw-elements";
-// initTWE({ Carousel });
-
-import '../../public/css/style.css'
+import MyCarousel from "./Carousel";
+import '../../public/css/style.css';
 
 
 
@@ -103,7 +98,7 @@ export default function Main() {
                   Community Events
                 </h1>
                 <p>
-                  JOin our vibrant community and participate n a variety of
+                  Join our vibrant community and participate n a variety of
                   engaging events nd activities.
                 </p>
               </div>
@@ -117,6 +112,8 @@ export default function Main() {
             </div>
           </div>
         </div>
+
+        <MyCarousel />
 
         <section className="flex flex-col lg:flex-row gap-10 px-3 lg:px-20 items-center text-[#000]">
           <div className="flex-[1]">
